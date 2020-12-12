@@ -18,19 +18,19 @@ const Destinations = () => {
     
     <div className="destination-list">
         <ul className="destination-ul-list">
-            <li className="destination-li">
+            <li className="destination-li-icons">
                 <Link to="/Beach">
                 <img className="iconbeach" src={BeachIcon} alt="Beach"/>
                 </Link>
             </li>
 
-            <li className="destination-li">
+            <li className="destination-li-icons">
                 <Link to="/Camping">
                 <img className="iconcamping" src={CampingIcon} alt="Camping"/>
                 </Link>
             </li>
 
-            <li className="destination-li">
+            <li className="destination-li-icons">
                 <Link to="/Snowboarding">
                 <img className="iconsnow" src={SnowIcon} alt="Snowboarding"/>
                 </Link>

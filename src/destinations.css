@@ -7,19 +7,20 @@
     left: 40%;
 	}
 
-.destination-li{
+.destination-li-icons{
 	display: inline;
     margin: 5%;
 }
 
-.destination-li, img {
-    height: 300px;
-    margin: 30px;
+.destination-li-icons, img {
+    height: 250px;
+    margin: 60px;
 }
 
-img:hover {
+.destination-li-icons, img:hover {
     transform: scale(1.2);
     background-color: white;
     border-radius: 50%;
     padding: 10px;
+
 } 
