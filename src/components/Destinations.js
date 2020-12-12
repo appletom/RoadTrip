@@ -4,7 +4,7 @@ import Draggable from 'react-draggable';
 
 import Beach from './Beach';
 import Camping from './Camping';
-import Skiing from './Skiing';
+import Snowboarding from './Snowboarding';
 
 import destinations from '../destinations.css';
 
@@ -13,12 +13,8 @@ const Destinations = () => {
         <div>
         <ul>
         <li><Link to="/Beach">Beach</Link></li>
-
-
         <li><Link to="/Camping">Camping</Link></li>
-
-
-        <li><Link to="/Skiing">Skiing</Link></li>
+        <li><Link to="/Snowboarding">Snowboarding</Link></li>
         </ul>
 
         <Draggable>

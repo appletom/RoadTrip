@@ -3,15 +3,15 @@ import { Link, Route, Switch } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
 import destinations from '../destinations.css';
-import '../camping.css';
+import '../snowboarding.css';
 
-const Camping = () => {
+const Snowboarding = () => {
     return (
         <div>
-        <h1>camping</h1>
+        <h1>Snowboarding</h1>
         </div>
     )
 }
 
 
-export default Camping
+export default Snowboarding
