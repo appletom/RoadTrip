@@ -4,6 +4,8 @@ import Draggable from 'react-draggable';
 
 import camping from '../camping.css';
 
+import AlertError from './AlertError';
+import AlertSuccess from './AlertSuccess';
 
 const Camping = () => {
     return (

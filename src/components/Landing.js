@@ -4,6 +4,8 @@ import landing from '../landing.css'
 
 const Landing = () => {
     return (
+
+        
         <a href="/destinations">
         <img className="img-world" src={Map} alt="world map" />
         </a>
