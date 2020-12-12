@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
-import destinations from '../destinations.css';
-import '../snowboarding.css';
+import snowboarding from '../snowboarding.css';
+
 
 const Snowboarding = () => {
     return (
