@@ -8,8 +8,7 @@ import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
 
-import AlertError from './components/AlertError';
-import AlertSuccess from './components/AlertSuccess';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 import Draggable from 'react-draggable';
@@ -28,18 +27,10 @@ const App = () => {
   <div>
 
   <header>
-
-      <div className="wrapper">
-        <AlertError title="not a match" type="error">
-        <div>It's not a match, try again!</div>
-        </AlertError>
+      <div className="header-wrapper">
+        <Header/>
       </div>
 
-      <div className="wrapper">
-        <AlertSuccess title="That's correct" type="success">
-        <div>That's correct!</div>
-        </AlertSuccess>
-      </div>
 
   </header>
 

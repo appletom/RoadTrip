@@ -13,11 +13,10 @@
 
 .destination-li-icons, img {
     height: 250px;
-    margin: 60px;
+    margin: 50px;
 }
 
 .destination-li-icons, img:hover {
-    transform: scale(1.2);
     background-color: white;
     border-radius: 50%;
     padding: 10px;
