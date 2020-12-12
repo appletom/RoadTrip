@@ -6,12 +6,20 @@ import Beach from './Beach';
 import Camping from './Camping';
 import Skiing from './Skiing';
 
+import destinations from '../destinations.css';
+
 const Destinations = () => {
     return (
         <div>
-        <li> <Link to="/destinations/Beach">Beach</Link> </li>
-        <li> <Link to="/destinations/Camping">Camping</Link> </li>
-        <li> <Link to="/destinations/Skiing">Skiing</Link> </li>
+        <ul>
+        <li><Link to="/Beach">Beach</Link></li>
+
+
+        <li><Link to="/Camping">Camping</Link></li>
+
+
+        <li><Link to="/Skiing">Skiing</Link></li>
+        </ul>
 
         <Draggable>
         <div>I can now be moved around!</div>
