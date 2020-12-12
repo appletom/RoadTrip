@@ -5,7 +5,7 @@ import '../alertSuccess.css';
 const AlertSuccess = ({children, title, type}) => {
   return (
     <div className={`alert-wrapper ${type}`}>
-    <h2>Alert</h2>
+    <h2>Success</h2>
     {children}
     </div>
 

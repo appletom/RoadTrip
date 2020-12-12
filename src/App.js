@@ -29,13 +29,13 @@ const App = () => {
 
       <div className="wrapper">
         <AlertError title="not a match" type="error">
-        <div>It's not a match, try again, you got this!</div>
+        <div>It's not a match, try again!</div>
         </AlertError>
       </div>
 
       <div className="wrapper">
         <AlertSuccess title="That's correct" type="success">
-        <div>Success, that's correct!</div>
+        <div>That's correct!</div>
         </AlertSuccess>
       </div>
 

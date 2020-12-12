@@ -8,16 +8,34 @@ import Snowboarding from './Snowboarding';
 
 import destinations from '../destinations.css';
 
+import BeachIcon from '../assets/images/beach/iconbeach.png';
+import CampingIcon from '../assets/images/camping/icontent.png';
+import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
 
 const Destinations = () => {
     return (
     <div>
     
     <div className="destination-list">
-        <ul>
-        <li><Link to="/Beach">Beach</Link></li>
-        <li><Link to="/Camping">Camping</Link></li>
-        <li><Link to="/Snowboarding">Snowboarding</Link></li>
+        <ul className="destination-ul-list">
+            <li className="destination-li">
+                <Link to="/Beach">
+                <img className="iconbeach" src={BeachIcon} alt="Beach"/>
+                </Link>
+            </li>
+
+            <li className="destination-li">
+                <Link to="/Camping">
+                <img className="iconcamping" src={CampingIcon} alt="Camping"/>
+                </Link>
+            </li>
+
+            <li className="destination-li">
+                <Link to="/Snowboarding">
+                <img className="iconsnow" src={SnowIcon} alt="Snowboarding"/>
+                </Link>
+            </li>
+    
         </ul>
     </div>
 
