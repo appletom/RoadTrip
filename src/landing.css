@@ -10,4 +10,5 @@
 
 .img-world:hover {
     transform: scale(1.16);
+    background-color: transparent;
 }

@@ -22,3 +22,7 @@ code {
 .wrapper {
     padding: 20px;
 }
+
+.footer-wrapper {
+  line-height: 100px;
+}

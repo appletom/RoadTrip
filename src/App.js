@@ -10,6 +10,7 @@ import Credits from './components/Credits';
 
 import AlertError from './components/AlertError';
 import AlertSuccess from './components/AlertSuccess';
+import Footer from './components/Footer';
 
 import Draggable from 'react-draggable';
 
@@ -19,6 +20,7 @@ import './destinations.css';
 import './beach.css';
 import './camping.css';
 import './snowboarding.css';
+
 
 const App = () => {
   return (
@@ -56,10 +58,14 @@ const App = () => {
   </main>
   
   <footer>
+      <div className="footer-wrapper">
+        <Footer/>
+      </div>
 
 
   </footer>
   
+
   </div>
   );
 }
