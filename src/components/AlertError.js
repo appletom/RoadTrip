@@ -5,7 +5,7 @@ import '../alertError.css';
 const AlertError = ({children, title, type}) => {
   return (
   <div className={`alert-wrapper ${type}`}>
-    <h2>Alert</h2>
+    <h2>Try again</h2>
     {children}
 
   
