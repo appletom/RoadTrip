@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 import Landing from './components/Landing';
-import Destinations from './components/Destinations';
+import Destinations from './components/Destinations'; //where destination lives 
 
 import Credits from './components/Credits';
 
@@ -15,14 +15,13 @@ const App = () => {
   <header>
 
 
-      <Route exact path="/" component={Landing} />
-
 
   </header>
 
   <main>
     <Switch>
-      <Route exact path="./components/Destinations" component = {Destinations} />
+      <Route exact path="/" component={Landing} />
+      <Route path="/destinations" component = {Destinations} /> {/* /destinations is where you want {Destinations} to go */}
     </Switch>
 
   </main>
