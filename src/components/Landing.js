@@ -1,9 +1,9 @@
 import React from 'react';
-import Map from '../assets/images/landing/map.jpg';
+import Map from '../assets/images/landing/world.png';
 
 const Landing = () => {
     return (
-        <img src={Map} alt="world map" />
+        <img className="img-world" src={Map} alt="world map" />
     )
 }
 

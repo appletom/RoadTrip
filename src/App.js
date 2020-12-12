@@ -7,6 +7,8 @@ import Credits from './components/Credits';
 
 import Draggable from 'react-draggable';
 
+import './landing.css';
+
 const App = () => {
   return (
     
