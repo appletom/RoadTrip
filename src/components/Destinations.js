@@ -4,20 +4,28 @@ import Draggable from 'react-draggable';
 
 import Beach from './Beach';
 import Camping from './Camping';
-import Skiing from './Skiing';
+import Snowboarding from './Snowboarding';
+
+import destinations from '../destinations.css';
+
 
 const Destinations = () => {
     return (
-        <div>
-        <li> <Link to="/destinations/Beach">Beach</Link> </li>
-        <li> <Link to="/destinations/Camping">Camping</Link> </li>
-        <li> <Link to="/destinations/Skiing">Skiing</Link> </li>
+    <div>
+    
+    <div className="destination-list">
+        <ul>
+        <li><Link to="/Beach">Beach</Link></li>
+        <li><Link to="/Camping">Camping</Link></li>
+        <li><Link to="/Snowboarding">Snowboarding</Link></li>
+        </ul>
+    </div>
 
-        <Draggable>
-        <div>I can now be moved around!</div>
-        </Draggable>
+    <Draggable>
+    <div>I can now be moved around!</div>
+    </Draggable>
 
-        </div>
+    </div>
     )
 }
 

@@ -2,16 +2,16 @@ import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
-import beach from '../beach.css';
+import snowboarding from '../snowboarding.css';
 
 
-const Beach = () => {
+const Snowboarding = () => {
     return (
         <div>
-        <h1>beach</h1>
+        <h1>Snowboarding</h1>
         </div>
     )
 }
 
 
-export default Beach;
+export default Snowboarding

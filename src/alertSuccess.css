@@ -1,0 +1,20 @@
+.cart-success-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cart-success-wrapper h2 {
+    width: 100%;
+
+}
+
+.alert-wrapper.success {
+    border: #6DA06F solid 1px;
+
+}
+
+.success h2 {
+    color: #6DA06F;
+    
+}
