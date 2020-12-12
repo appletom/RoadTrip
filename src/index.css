@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Beach Page */
+
+
+
+
+/* Camping Page */
+
+
+
+/* City Page */
+
+
+/* Header Page */
+
+
+/* Credits Page */
+.credits {
+
+    min-height: 70%;
+    min-height: -webkit-calc(100% - 186px);
+    min-height: -moz-calc(100% - 186px);
+    min-height: calc(100% - 186px);
+    display: flex;
+    flex-direction: column;
+}
