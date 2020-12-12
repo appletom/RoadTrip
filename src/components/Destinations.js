@@ -14,8 +14,15 @@ import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
 
 const Destinations = () => {
     return (
+
     <div>
-    
+
+
+    <Draggable>
+    <div>I can now be moved around!</div>
+    </Draggable>
+
+
     <div className="destination-list">
         <ul className="destination-ul-list">
             <li className="destination-li-icons">
@@ -39,9 +46,6 @@ const Destinations = () => {
         </ul>
     </div>
 
-    <Draggable>
-    <div>I can now be moved around!</div>
-    </Draggable>
 
     </div>
     )
