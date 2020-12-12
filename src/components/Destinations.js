@@ -9,10 +9,9 @@ import Skiing from './Skiing';
 const Destinations = () => {
     return (
         <div>
-        <Link to="/Beach"> Beach </Link>
-        <Link to="/Camping"> Camping </Link>
-        <Link to="/Skiing"> Skiing </Link>
-
+        <li> {Beach} </li>
+        <li> {Camping} </li>
+        <li> {Skiing} </li>
 
         <Draggable>
         <div>I can now be moved around!</div>
