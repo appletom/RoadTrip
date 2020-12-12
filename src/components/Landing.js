@@ -3,7 +3,7 @@ import React from 'react';
 
 const Landing = () => {
     return (
-        <img src={'./public/images/landing/map.jpg'} alt="Landing Page" />
+        <img src={'./public/images/landing/map.jpg'} alt="image of world on Landing Page" />
     )
 }
 

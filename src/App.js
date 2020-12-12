@@ -1,4 +1,4 @@
-import { Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
 import Landing from './components/Landing';
 import Destinations from './components/Destinations';
@@ -13,11 +13,11 @@ const App = () => {
   <div>
 
   <header>
-    ROAD TRIP
-    
-    <Link to="/components/Destinations"> Destinations </Link>    
-    <Link to="/components/Credits"> Credits </Link>
- 
+
+
+      <Route exact path="/" component={Landing} />
+
+
   </header>
 
   <main>

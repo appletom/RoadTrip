@@ -19,6 +19,13 @@ code {
 }
 
 
+/* Landing page */
+.home-navbar, li {
+  text-decoration: none;
+}
+
+
+
 /* Beach Page */
 
 
@@ -30,8 +37,6 @@ code {
 
 /* City Page */
 
-
-/* Header Page */
 
 
 /* Credits Page */
