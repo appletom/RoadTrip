@@ -2,10 +2,9 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import Beach from './components/Beach';
 import Camping from './components/Camping';
-import City from './components/City';
-import Credits from './components/Credits';
 import Home from './components/Home';
-
+import Skiing from './components/Skiing';
+import Credits from './components/Credits';
 
 import Draggable from 'react-draggable';
 
@@ -17,12 +16,11 @@ const App = () => {
   <header>
     ROAD TRIP
 
-    <Link to="./components/Home"> Home </Link>    
-    <Link to="./components/Beach"> Beach </Link>
-    <Link to="./components/Camping"> Camping </Link>
-    <Link to="./components/City"> City </Link>
-    <Link to="./components/Credits"> Credits </Link>
-
+    <Link to="/components/Home"> Home </Link>    
+    <Link to="/components/Beach"> Beach </Link>
+    <Link to="/components/Camping"> Camping </Link>
+    <Link to="/components/Skiing"> Skiing </Link>
+    <Link to="/components/Credits"> Credits </Link>
 
     <Draggable>
       <div>I can now be moved around!</div>

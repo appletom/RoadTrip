@@ -1,8 +1,9 @@
 import React from 'react';
+//import map from './public/images/landing/map.jpg';
 
 const Home = () => {
     return (
-        console.log('Home page')
+        <img src={'./public/images/landing/map.jpg'} alt="Landing Page" />
     )
 }
 
