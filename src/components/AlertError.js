@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../alertError.css';
+
+
 
 const AlertError = ({children, title, type}) => {
   return (

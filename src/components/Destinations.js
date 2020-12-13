@@ -6,31 +6,36 @@ import Beach from './Beach';
 import Camping from './Camping';
 import Snowboarding from './Snowboarding';
 
-import destinations from '../destinations.css';
-
 import BeachIcon from '../assets/images/beach/iconbeach.png';
 import CampingIcon from '../assets/images/camping/icontent.png';
 import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
 
 const Destinations = () => {
     return (
+
     <div>
-    
+
+
+    <Draggable>
+    <div>I can now be moved around!</div>
+    </Draggable>
+
+
     <div className="destination-list">
         <ul className="destination-ul-list">
-            <li className="destination-li">
+            <li className="destination-li-icons">
                 <Link to="/Beach">
                 <img className="iconbeach" src={BeachIcon} alt="Beach"/>
                 </Link>
             </li>
 
-            <li className="destination-li">
+            <li className="destination-li-icons">
                 <Link to="/Camping">
                 <img className="iconcamping" src={CampingIcon} alt="Camping"/>
                 </Link>
             </li>
 
-            <li className="destination-li">
+            <li className="destination-li-icons">
                 <Link to="/Snowboarding">
                 <img className="iconsnow" src={SnowIcon} alt="Snowboarding"/>
                 </Link>
@@ -39,9 +44,6 @@ const Destinations = () => {
         </ul>
     </div>
 
-    <Draggable>
-    <div>I can now be moved around!</div>
-    </Draggable>
 
     </div>
     )
