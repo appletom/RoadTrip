@@ -14,11 +14,7 @@ import Footer from './components/Footer';
 import Draggable from 'react-draggable';
 
 import './index.css';
-import './landing.css';
-import './destinations.css';
-import './beach.css';
-import './camping.css';
-import './snowboarding.css';
+
 
 
 const App = () => {

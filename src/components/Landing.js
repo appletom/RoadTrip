@@ -1,6 +1,6 @@
 import React from 'react';
 import Map from '../assets/images/landing/world.png';
-import landing from '../landing.css'
+
 
 const Landing = () => {
     return (

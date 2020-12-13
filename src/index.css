@@ -27,14 +27,147 @@ code {
   top: 0;
   width: 100%;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer-wrapper {
-  position: absolute;
-  line-height: 80px;
+
   width: 100%;
   background-color: white;
   margin-top: 50px;
   padding-top: 5px;
 }
+
+/*------------------------- alertrror -----------------------*/
+alert-wrapper {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.alert-wrapper h2 {
+    margin: 0 0 10px 0;
+}
+
+
+
+.alert-wrapper.error {
+    border: #F56260 solid 1px;
+}
+
+.error h2 {
+    color: #F56260;
+}
+
+/*------------------------- alertSuccess -----------------------*/
+
+.cart-success-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cart-success-wrapper h2 {
+    width: 100%;
+
+}
+
+.item {
+    margin-right: 20px;
+}
+
+.alert-wrapper.success {
+    border: #6DA06F solid 1px;
+
+}
+
+.success h2 {
+    color: #6DA06F;
+    
+}
+
+
+
+/*------------------------- Beach -----------------------*/
+
+
+.Beach > body {
+height: 100%;
+width: 100%;
+background-image: url('./assets/images/beach/themebeach.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+background-position: center center;
+}
+
+
+/*------------------------- Camping -----------------------*/
+
+
+
+/*------------------------- Snowboarding -----------------------*/
+
+
+
+/*------------------------- Destinations -----------------------*/
+.destination-ul-list {
+    list-style-type: none;
+	min-width: 500px;
+	list-style: none;
+    text-align: center;
+    left: 40%;
+	}
+
+.destination-li-icons{
+	display: inline;
+}
+
+.destination-li-icons, img {
+    height: 250px;
+    margin: 50px;
+}
+
+.destination-li-icons, .iconbeach:hover {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+
+} 
+
+.destination-li-icons, .iconcamping:hover {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+
+} 
+
+.destination-li-icons, .iconsnow:hover {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+
+} 
+
+
+
+
+/*------------------------- Landing -----------------------*/
+.img-world {
+    background-size: cover;
+    justify-content: center;
+    height: 750px;
+    width: 1050px;
+    margin-left: 5%;
+
+}
+
+.img-world:hover {
+    transform: scale(1.12);
+    background-color: transparent;
+}
+
