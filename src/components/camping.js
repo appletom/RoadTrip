@@ -6,10 +6,24 @@ import Draggable from 'react-draggable';
 import AlertError from './AlertError';
 import AlertSuccess from './AlertSuccess';
 
+import '../index.css';
+
 const Camping = () => {
     return (
-        <div>
-        <h1>camping</h1>
+       <div className="camping-page">
+        <div className="camping-bg">
+
+        <div className="wrapper">
+            <AlertError title="not a match" type="error">
+            </AlertError>
+        </div>
+
+        <div className="wrapper">
+            <AlertSuccess title="That's correct" type="success">
+
+            </AlertSuccess>
+        </div>
+        </div>
         </div>
     )
 }

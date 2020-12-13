@@ -53,16 +53,33 @@ code {
 background: url('./assets/images/beach/themebeach.jpg'); 
 background-size: cover;
 background-repeat: no-repeat;
-min-height: 110vh;
-top: 0;
+background-attachment: fixed;
+background-position: bottom center;
+min-height: 100vh;
 }
 
 
 /*------------------------- Camping -----------------------*/
+.camping-page > .camping-bg {
+background: url('./assets/images/camping/themecamping.jpg'); 
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: bottom center;
+min-height: 100vh;
+}
 
 
 
 /*------------------------- Snowboarding -----------------------*/
+.snow-page > .snow-bg {
+background: url('./assets/images/snowboarding/themesnow.jpg'); 
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center 80%;
+min-height: 100vh;
+}
 
 
 
