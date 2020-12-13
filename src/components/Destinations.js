@@ -6,8 +6,6 @@ import Beach from './Beach';
 import Camping from './Camping';
 import Snowboarding from './Snowboarding';
 
-import destinations from '../destinations.css';
-
 import BeachIcon from '../assets/images/beach/iconbeach.png';
 import CampingIcon from '../assets/images/camping/icontent.png';
 import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
