@@ -7,6 +7,7 @@ const AlertError = ({children, title, type}) => {
   return (
   <div className={`alert-wrapper ${type}`}>
     <h2>Try again</h2>
+    <p>It's not a match, try again!</p>
     {children}
 
   

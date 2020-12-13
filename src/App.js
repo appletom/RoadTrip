@@ -8,8 +8,8 @@ import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+//import Header from './components/Header';
+//import Footer from './components/Footer';
 
 import Draggable from 'react-draggable';
 
@@ -22,14 +22,14 @@ const App = () => {
     
   <div>
 
-  <header>
-      <div className="header-wrapper">
+{ /*   <header>
+     <div className="header-wrapper">
         <Header/>
       </div>
 
 
   </header>
-
+*/}
   <main>
     <Switch>
       <Route exact path="/" component={Landing} />
@@ -44,14 +44,14 @@ const App = () => {
 
   </main>
   
-  <footer>
+{ /*   <footer>
       <div className="footer-wrapper">
         <Footer/>
       </div>
 
 
   </footer>
-  
+*/}  
 
   </div>
   );

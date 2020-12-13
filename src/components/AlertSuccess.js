@@ -6,6 +6,7 @@ const AlertSuccess = ({children, title, type}) => {
   return (
     <div className={`alert-wrapper ${type}`}>
     <h2>Success</h2>
+    <p>That's correct!</p>
     {children}
     </div>
 

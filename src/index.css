@@ -1,16 +1,12 @@
-html {
-  height: 100%;
-}
 
 body {
-  justify-content: center;
-  margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100%;
+
   background-color: aliceblue;
 }
 
@@ -19,90 +15,46 @@ code {
     monospace;
 }
 
-.wrapper {
+/* .wrapper {
     padding: 20px;
 }
-
-.header-wrapper {
+ */
+/* .header-wrapper {
   top: 0;
   width: 100%;
   background-color: white;
-  padding: 10px;
 }
 
 .footer-wrapper {
 
   width: 100%;
   background-color: white;
-  margin-top: 50px;
-  padding-top: 5px;
-}
 
-/*------------------------- alertrror -----------------------*/
-alert-wrapper {
-    padding: 15px;
-    margin-bottom: 15px;
-}
+} */
 
-.alert-wrapper h2 {
-    margin: 0 0 10px 0;
-}
-
-
-
-.alert-wrapper.error {
-    border: #F56260 solid 1px;
-}
-
-.error h2 {
-    color: #F56260;
-}
-
-/*------------------------- alertSuccess -----------------------*/
-
-.cart-success-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+/*------------------------- Landing -----------------------*/
+.img-world {
+    background-size: cover;
+    justify-content: center;
+    height: 750px;
+    width: 1050px;
+    margin-left: 5%;
 
 }
 
-.cart-success-wrapper h2 {
-    width: 100%;
-
+.img-world:hover {
+    transform: scale(1.12);
+    background-color: transparent;
 }
-
-.item {
-    margin-right: 20px;
-}
-
-.alert-wrapper.success {
-    border: #6DA06F solid 1px;
-
-}
-
-.success h2 {
-    color: #6DA06F;
-    
-}
-
 
 
 /*------------------------- Beach -----------------------*/
-
-
-.Beach > body {
-height: 100%;
-width: 100%;
-background-image: url('./assets/images/beach/themebeach.jpg');
+.beach-page > .beach-bg {
+background: url('./assets/images/beach/themebeach.jpg'); 
 background-size: cover;
 background-repeat: no-repeat;
-background-attachment: fixed;
--webkit-background-size: cover;
-
--moz-background-size: cover;
-
--o-background-size: cover;
-background-position: center center;
+min-height: 110vh;
+top: 0;
 }
 
 
@@ -128,8 +80,8 @@ background-position: center center;
 }
 
 .destination-li-icons, img {
-    height: 250px;
-    margin: 50px;
+    height: 200px;
+    margin: 30px;
 }
 
 .destination-li-icons, .iconbeach:hover {
@@ -156,18 +108,65 @@ background-position: center center;
 
 
 
-/*------------------------- Landing -----------------------*/
-.img-world {
-    background-size: cover;
-    justify-content: center;
-    height: 750px;
-    width: 1050px;
-    margin-left: 5%;
+/*------------------------- alertSuccess -----------------------*/
+
+.cart-success-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
-.img-world:hover {
-    transform: scale(1.12);
-    background-color: transparent;
+.cart-success-wrapper h2 {
+    width: 100%;
+
 }
+
+.item {
+    margin-right: 20px;
+}
+
+.alert-wrapper.success {
+    border: #6DA06F solid 1px;
+    background-color: green;
+    width: 20%;
+}
+
+.success h2 {
+    color: lightgreen;
+    
+}
+
+.success p {
+    color: lightgreen;
+}
+
+
+
+/*------------------------- alertrror -----------------------*/
+.alert-wrapper {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.alert-wrapper h2 {
+    margin: 0 0 10px 0;
+}
+
+.alert-wrapper.error {
+    border: #F56260 solid 1px;
+    width: 20%;
+}
+
+.error h2 {
+    color: darkred;
+}
+
+.error p {
+    color: darkred;
+}
+
+.alert-wrapper.error {
+    background-color: #F56260;
+}
+
 
