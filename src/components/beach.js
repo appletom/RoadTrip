@@ -14,6 +14,12 @@ const Beach = () => {
         <div className="beach-page">
         <div className="beach-bg">
 
+    <Draggable>
+    <div>I can now be moved around!</div>
+    </Draggable>
+
+
+
         <div className="wrapper">
             <AlertError title="not a match" type="error">
             </AlertError>

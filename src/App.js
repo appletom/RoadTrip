@@ -1,4 +1,8 @@
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+
+
+import './index.css';
 
 import Landing from './components/Landing';
 import Destinations from './components/Destinations'; //where destination lives 
@@ -8,12 +12,12 @@ import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
 
+
 //import Header from './components/Header';
 //import Footer from './components/Footer';
 
 import Draggable from 'react-draggable';
 
-import './index.css';
 
 
 
@@ -38,7 +42,6 @@ const App = () => {
       <Route path="/camping" component = {Camping} /> 
       <Route path="/snowboarding" component = {Snowboarding} />
 
-
           
     </Switch>
 
@@ -56,5 +59,6 @@ const App = () => {
   </div>
   );
 }
+
 
 export default App;
