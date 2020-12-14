@@ -6,6 +6,8 @@ import Draggable from 'react-draggable';
 import AlertError from './AlertError';
 import AlertSuccess from './AlertSuccess';
 
+import Zoom from './Zoom';
+
 import '../index.css';
 
 const Beach = () => {
