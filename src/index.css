@@ -58,6 +58,15 @@ background-position: bottom center;
 min-height: 100vh;
 }
 
+.beach-icons-div {
+background-color: rgb(255,239,213, .92);
+position: absolute;
+min-height: 80vh;
+min-width: 140vh;
+top: 25%; margin-top:-85px;
+left: 40%; margin-left:-360px;
+}
+
 .beach-icons, img {
     height: 80px;
 }

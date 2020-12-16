@@ -17,7 +17,7 @@ const Beach = () => {
         <div className="beach-page">
         <div className="beach-bg">
 
-            <div >
+            <div className="beach-icons-div">
             <Draggable>
             <img className="beach-icons" src={seashell}/>
             </Draggable>
