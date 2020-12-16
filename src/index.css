@@ -58,6 +58,9 @@ background-position: bottom center;
 min-height: 100vh;
 }
 
+.beach-icons, img {
+    height: 80px;
+}
 
 /*------------------------- Camping -----------------------*/
 .camping-page > .camping-bg {

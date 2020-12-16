@@ -9,6 +9,7 @@ import AlertSuccess from './AlertSuccess';
 import Zoom from './Zoom';
 
 import '../index.css';
+import seashell from '../assets/images/beach/2seashell.png';
 
 const Beach = () => {
 
@@ -16,22 +17,13 @@ const Beach = () => {
         <div className="beach-page">
         <div className="beach-bg">
 
-    <Draggable>
-    <div>I can now be moved around!</div>
-    </Draggable>
+            <div >
+            <Draggable>
+            <img className="beach-icons" src={seashell}/>
+            </Draggable>
 
+            </div>
 
-
-        <div className="wrapper">
-            <AlertError title="not a match" type="error">
-            </AlertError>
-        </div>
-
-        <div className="wrapper">
-            <AlertSuccess title="That's correct" type="success">
-
-            </AlertSuccess>
-        </div>
         </div>
         </div>
     

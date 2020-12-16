@@ -11,7 +11,7 @@ import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
-import Zoom from './components/Zoom';
+//import Zoom from './components/Zoom';
 
 //import Header from './components/Header';
 //import Footer from './components/Footer';
