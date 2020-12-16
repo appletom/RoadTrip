@@ -50,47 +50,51 @@ code {
 
 /*------------------------- Beach -----------------------*/
 .beach-page > .beach-bg {
-background: url('./assets/images/beach/themebeach.jpg'); 
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: bottom center;
-min-height: 100vh;
+    background: url('./assets/images/beach/themebeach.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    min-height: 100vh;
+  
 }
 
 .beach-icons-div {
-background-color: rgb(255,239,213, .92);
-position: absolute;
-min-height: 80vh;
-min-width: 140vh;
-top: 25%; margin-top:-85px;
-left: 40%; margin-left:-360px;
+
+    background-color: rgb(255,239,213, .91);
+    position: absolute;
+    max-height: 80vh;
+    min-width: 140vh;
+    top: 25%; margin-top:-85px;
+    left: 40%; margin-left:-360px;
 }
 
 .beach-icons, img {
+    flex-direction: column;
     height: 80px;
+    justify-content: column;
 }
 
 /*------------------------- Camping -----------------------*/
 .camping-page > .camping-bg {
-background: url('./assets/images/camping/themecamping.jpg'); 
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: bottom center;
-min-height: 100vh;
+    background: url('./assets/images/camping/themecamping.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    min-height: 100vh;
 }
 
 
 
 /*------------------------- Snowboarding -----------------------*/
 .snow-page > .snow-bg {
-background: url('./assets/images/snowboarding/themesnow.jpg'); 
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center 80%;
-min-height: 100vh;
+    background: url('./assets/images/snowboarding/themesnow.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 80%;
+    min-height: 100vh;
 }
 
 

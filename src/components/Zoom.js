@@ -1,7 +1,8 @@
 import React from 'react';
+import Zoom from 'react-reveal';
 
 
-class Zoom extends React.Component {
+class ZoomClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = { show: false };
@@ -14,7 +15,7 @@ class Zoom extends React.Component {
     return (
       <div>
         <Zoom left when={this.state.show}>
-          <h1>React Reveal</h1>
+          <h1>React Reveal zoom</h1>
         </Zoom>
         <button
           className="btn btn-success my-5"
@@ -28,4 +29,4 @@ class Zoom extends React.Component {
   }
 }
 
-export default Zoom;
+export default ZoomClass;
