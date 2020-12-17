@@ -33,13 +33,17 @@ code {
 } */
 
 /*------------------------- Landing -----------------------*/
-.img-world {
-    background-size: cover;
-    justify-content: center;
-    height: 700px;
-    width: 1050px;
-    margin-left: 5%;
 
+.img-world {
+    position: absolute;
+    height: 600px;
+    width: 950px;
+    margin-left: 5%;
+    background-size: cover;
+    z-index: 12;
+    margin-left: 5%;
+    top: 52px;
+    left: 8%;
 }
 
 .img-world:hover {
@@ -47,6 +51,15 @@ code {
     background-color: transparent;
 }
 
+.img-clouds {
+    position: absolute;
+    z-index: 12;
+    margin-left: 5%;
+    height: 400px;
+    width: 650px;
+    top: -62px;
+    left: 9%;
+}
 
 /*------------------------- Beach -----------------------*/
 .beach-page > .beach-bg {
