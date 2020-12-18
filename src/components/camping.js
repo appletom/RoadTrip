@@ -15,11 +15,9 @@ const Camping = () => {
        <div className="camping-page">
         <div className="camping-bg">
     
-    <img src={cooler} alt="Cooler" />;
+        <img src={cooler} alt="Cooler" />;
 
-        <Draggable>
-        <div>I can now be moved around!</div>
-        </Draggable>
+
 
         
         <div className="wrapper">

@@ -102,7 +102,7 @@ code {
 
 /*------------------------- Snowboarding -----------------------*/
 .snow-page > .snow-bg {
-    background: url('./assets/images/snowboarding/themesnow.jpg'); 
+    background: url('./assets/images/snowboarding/themesnow2.png'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -110,6 +110,28 @@ code {
     min-height: 100vh;
 }
 
+.snow-div > .snowpuzzle{
+    background-color: rgb(255,255,255, .7);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+
+
+}
+
+.snowpuzzle {
+
+    height: 140px;
+    width: 50%;
+
+ 
+}
 
 
 /*------------------------- Destinations -----------------------*/

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
+import CounterEntity from './CounterEntity'; 
 
 import AlertError from './AlertError';
 import AlertSuccess from './AlertSuccess';
@@ -22,7 +23,7 @@ const Beach = () => {
             <Slide left>
             <div className="beach-icons-div">
 
-            
+ 
  
             <div className="column">
             <Rotate>
@@ -31,13 +32,7 @@ const Beach = () => {
                 <img className="beach-icons" src={seashell}/>
                 </Draggable>
 
-                <Draggable>
-                <img className="beach-icons" src={seashell}/>
-                </Draggable>
-
-                <Draggable>
-                <img className="beach-icons" src={seashell}/>
-                </Draggable>
+ 
 
             </Rotate>      
             </div>

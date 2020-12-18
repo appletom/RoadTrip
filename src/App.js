@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
-
+import { useEntityComponentSystem } from 'react-entity-component-system'
 
 import './index.css';
 
@@ -17,8 +17,6 @@ import Credits from './components/Credits';
 //import Footer from './components/Footer';
 
 import Draggable from 'react-draggable';
-
-
 
 
 const App = () => {
