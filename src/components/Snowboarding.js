@@ -18,22 +18,22 @@ import snow4 from '../assets/images/snowboarding/snow4.png';
 
 const finalPuzzle = [
     {
-    id: '1',
+    id: 1,
     thumb: `${snow1}`
     },
 
             {
-    id: '2',
+    id: 2,
     thumb: `${snow4}`
     },
 
             {
-    id: '3',
+    id: 3,
     thumb: `${snow2}`
     },
 
             {
-    id: '4',
+    id: 4,
     thumb: `${snow3}`
     }
 ]
@@ -45,6 +45,7 @@ const Snowboarding = () => {
     //update state any time item is dragged
     function handleOnDragEnd(result) {
   
+        console.log(result)
         //create a new copy of our snowPuzzles
         const items = Array.from(snowPuzzles);
 
@@ -65,8 +66,8 @@ const Snowboarding = () => {
         <div className="snow-div">
         <Slide left>
 
-        <DragDropContext onDragEnd={handleOnDragEnd}>
-        <Droppable droppableId="snowPuzzles">
+        <DragDropContext >
+        <Droppable >
 
             {(provided) => ( 
                 //provided includes info and ref to code from library to work properly
@@ -77,7 +78,7 @@ const Snowboarding = () => {
                     {snowPuzzles.map(({id, thumb, index}) => {
                     
                     return (
-                    <Draggable key={id} draggableId={id} index={index}>
+                    <Draggable key={id} draggableId={String(id)} index={index}>
                     
                     {(provided) => (
 
@@ -109,6 +110,5 @@ const Snowboarding = () => {
     
     )
 }
-
 
 export default Snowboarding

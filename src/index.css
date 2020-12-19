@@ -45,7 +45,7 @@ code {
     z-index: 12;
     margin-left: 5%;
     top: 52px;
-    left: 8%;
+
 }
 
 .img-world:hover {
@@ -73,7 +73,7 @@ code {
     display: flex;
     position: absolute;
     top: 15%;
-    left: 10%;
+
 
 	}
 
@@ -154,6 +154,7 @@ code {
     background-attachment: fixed;
     background-position: center 80%;
     min-height: 100vh;
+
 }
 
 .snow-div{
@@ -167,6 +168,7 @@ code {
 
 ul, .snowPuzzles {
     list-style: none; 
+    z-index: 1;
 
 }
 
