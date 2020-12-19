@@ -22,7 +22,7 @@ const Destinations = () => {
         <ul className="destination-ul-list">
             <li className="destination-li-icons">
                 <Link to="/Travel">
-                <img className="icon" src={TravelIcon} alt="Travel"/>
+                <img className="icontravel" src={TravelIcon} alt="Travel"/>
                 </Link>
             </li>
  
