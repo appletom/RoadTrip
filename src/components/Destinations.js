@@ -10,12 +10,16 @@ import BeachIcon from '../assets/images/beach/iconbeach.png';
 import CampingIcon from '../assets/images/camping/icontent.png';
 import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
 
+import Travel from './Travel';
 
 
 const Destinations = () => {
     return (
     <div>
     <div className="destinations">
+
+
+
         <ul className="destination-ul-list">
             <li className="destination-li-icons">
                 <Link to="/Beach">

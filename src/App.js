@@ -11,6 +11,7 @@ import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
+import Trivia from './components/Trivia';
 //import Zoom from './components/Zoom';
 
 //import Header from './components/Header';
@@ -19,20 +20,54 @@ import Credits from './components/Credits';
 import Draggable from 'react-draggable';
 
 
-const App = () => {
-  return (
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      isLoaded: false
+    }
+  } 
+  
+  componentDidMount() {
+    fetch('https://opentdb.com/api.php?amount=5&difficulty=easy')
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          isLoaded: true,
+          items: json
+        })
+      });
+
+  }
+
     
-  <div>
+  render () {
 
-{ /*   <header>
-     <div className="header-wrapper">
-        <Header/>
-      </div>
+    var { isLoaded, items } = this.state;
+
+    if (!isLoaded) {
+      return <div>Loading...</div>;
+    }
 
 
-  </header>
-*/}
+    return (
+
+  <div className="App">
+
+    { /*   <header>
+        <div className="header-wrapper">
+            <Header/>
+          </div>
+
+
+      </header>
+    */}
+
+
   <main>
+
+
     <Switch>
       <Route exact path="/" component={Landing} />
       <Route path="/destinations" component = {Destinations} /> {/* /destinations is where you want {Destinations} to go */}
@@ -57,6 +92,9 @@ const App = () => {
   </div>
   );
 }
+  }
+    
+
 
 
 export default App;

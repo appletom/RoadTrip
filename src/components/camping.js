@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
@@ -10,17 +10,23 @@ import AlertSuccess from './AlertSuccess';
 
 import '../index.css';
 
-const Camping = () => {
-    return (
+class Camping extends Component {
+    getTrivia = (e) => {
+        e.preventDefault();
+    }
+
+    render() {
+        return (
+            
        <div className="camping-page">
         <div className="camping-bg">
-    
-        <img src={cooler} alt="Cooler" />;
-
-
+        <header>
+            <h1 className="trivia-title">Trivia</h1>
+            <button>Start</button>
+        </header>
 
         
-        <div className="wrapper">
+{/*         <div className="wrapper">
             <AlertError title="not a match" type="error">
             </AlertError>
         </div>
@@ -29,11 +35,14 @@ const Camping = () => {
             <AlertSuccess title="That's correct" type="success">
 
             </AlertSuccess>
-        </div>
+        </div> */}
+
+
         </div>
         </div>
     )
 }
+}   
 
 
 export default Camping
