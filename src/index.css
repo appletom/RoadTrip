@@ -157,7 +157,7 @@ code {
 }
 
 .snow-div{
-    background-color: rgb(255,255,255, .7);
+    background-color: rgb(255,255,255, .9);
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
@@ -167,12 +167,18 @@ code {
 
 ul, .snowPuzzles {
     list-style: none; 
+
+}
+
+.snow-thumb {
+    margin-left: 8%;
 }
 
 .snow-img {
-    height: 30%;
-    width: 70%;
-    margin-left: 10%;
+    height: 110px;
+    width: 80%;
+    margin: 1%;
+
 }
 
 
