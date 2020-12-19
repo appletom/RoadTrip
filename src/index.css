@@ -63,6 +63,50 @@ code {
     left: 9%;
 }
 
+
+
+/*------------------------- Destinations -----------------------*/
+.destination-ul-list {
+    list-style-type: none;
+	min-width: 500px;
+	list-style: none;
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+
+	}
+
+.destination-li-icons{
+	display: inline;
+    background-color: white;
+    border-radius: 50%;    
+    margin: 40px;
+}
+
+.destination-li-icons, img {
+    transition: transform .2s; 
+}
+
+.icon {
+
+    height: 200px;
+}
+
+.iconbeach:hover {
+    transform: scale(1.4); 
+} 
+
+.iconcamping:hover {
+    transform: scale(1.2); 
+
+} 
+
+.iconsnow:hover {
+    transform: scale(1.2); 
+
+} 
+
 /*------------------------- Beach -----------------------*/
 .beach-page > .beach-bg {
     background: url('./assets/images/beach/themebeach.jpg'); 
@@ -109,7 +153,7 @@ code {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 80%;
-
+    min-height: 100vh;
 }
 
 .snow-div{
@@ -117,7 +161,7 @@ code {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-
+    min-height: 100vh;
 }
 
 
@@ -126,51 +170,11 @@ ul, .snowPuzzles {
 }
 
 .snow-img {
-    height: 10%;
+    height: 30%;
     width: 70%;
     margin-left: 10%;
 }
 
-/*------------------------- Destinations -----------------------*/
-.destination-ul-list {
-    list-style-type: none;
-	min-width: 500px;
-	list-style: none;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-	}
-
-.destination-li-icons{
-	display: inline;
-    margin: 0;
-    background-color: white;
-    border-radius: 50%;    
-}
-
-.destination-li-icons, img {
-    height: 200px;
-    margin: 40px;
-    transition: transform .2s; 
-
-
-}
-
-.iconbeach:hover {
-    transform: scale(1.4); 
-} 
-
-.iconcamping:hover {
-    transform: scale(1.2); 
-
-} 
-
-.iconsnow:hover {
-    transform: scale(1.2); 
-
-} 
 
 
 
