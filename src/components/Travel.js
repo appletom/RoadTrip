@@ -1,37 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 
+import Form from './Form'
 
 import '../index.css';
 
+class Travel extends Component {
 
-const Travel = () => {
+    getTravel = (e) => { // responsible for making API call
+        const searchInput = e.target.elements.searchInput.value;
+        e.preventDefault();
+        console.log(searchInput);
+    }
 
-    return (
-
-        <div className="travel-page">
-            <div className="travel-forms">
-                <h4>Food</h4>
-                <input type="text" name="input-food" placeholder="Eat something"/>
-                <button>Search</button>
+    render() {
+        return (
+            <div className="Travel">
+                <header className="Travel-header">
+                    <h1 className="Travel-title">Travel Search</h1>
+ 
+                </header>
+                <Form getTravel={this.getTravel}/>
             </div>
-
-            <div className="travel-forms">
-                <h4>Gas</h4>
-                <input type="text" name="input-food" placeholder="Fill up"/>
-                <button>Search</button>
-            </div>
-
-            <div className="travel-forms">
-                <h4>Hotel</h4>
-                <input type="text"name="input-food" placeholder="Sleep easy"/>
-                <button>Search</button>
-            </div>
-
-        </div>
-
-    )
-
+        )
+    }
 }
+
 
 export default Travel;
