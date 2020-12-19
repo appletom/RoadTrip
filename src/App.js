@@ -6,12 +6,12 @@ import './index.css';
 
 import Landing from './components/Landing';
 import Destinations from './components/Destinations'; //where destination lives 
-import Beach from './components/Beach';
+import Travel from './components/Travel';
 import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
-import Trivia from './components/Trivia';
+
 //import Zoom from './components/Zoom';
 
 //import Header from './components/Header';
@@ -62,7 +62,7 @@ class App extends Component {
     <Switch>
       <Route exact path="/" component={Landing} />
       <Route exact path="/destinations" component = {Destinations} /> {/* /destinations is where you want {Destinations} to go */}
-      <Route exact path="/beach" component = {Beach} /> 
+      <Route exact path="/travel" component = {Travel} /> 
       <Route exact path="/camping" component = {Camping} /> 
       <Route exact path="/snowboarding" component = {Snowboarding} />
 

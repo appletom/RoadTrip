@@ -2,15 +2,14 @@ import React, { Component }  from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
-import Beach from './Beach';
+import Travel from './Travel';
 import Camping from './Camping';
 import Snowboarding from './Snowboarding';
 
-import BeachIcon from '../assets/images/beach/iconbeach.png';
+import TravelIcon from '../assets/images/travel/travelicon.jpg';
 import CampingIcon from '../assets/images/camping/icontent.png';
 import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
 
-import Travel from './Travel';
 
 
 const Destinations = () => {
@@ -22,8 +21,8 @@ const Destinations = () => {
 
         <ul className="destination-ul-list">
             <li className="destination-li-icons">
-                <Link to="/Beach">
-                <img className="icon" src={BeachIcon} alt="Beach"/>
+                <Link to="/Travel">
+                <img className="icon" src={TravelIcon} alt="Travel"/>
                 </Link>
             </li>
  

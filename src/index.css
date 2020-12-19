@@ -89,25 +89,15 @@ code {
 }
 
 .icon {
-
     height: 200px;
+    border-radius: 50%;    
 }
 
-.iconbeach:hover {
-    transform: scale(1.4); 
-} 
-
-.iconcamping:hover {
+.destination-li-icons:hover {
     transform: scale(1.2); 
-
 } 
 
-.iconsnow:hover {
-    transform: scale(1.2); 
-
-} 
-
-/*------------------------- Beach -----------------------*/
+/*------------------------- Travel -----------------------*/
 .beach-page > .beach-bg {
     background: url('./assets/images/beach/themebeach.jpg'); 
     background-size: cover;

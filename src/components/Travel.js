@@ -1,16 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link, Route, Switch } from 'react-router-dom';
+
 
 import '../index.css';
 
-class Travel extends Component {
 
-    render() {
-        return (
-        <div className="Travel">
+const Travel = () => {
+
+    return (
+
+        <div className="travel-page">
+        <div className="travel-bg">
+
+
+        </div>
         </div>
 
-        )
-    }
+    )
+
 }
 
 export default Travel;
