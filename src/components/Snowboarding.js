@@ -1,13 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
-import Draggable from 'react-draggable';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
-import { useSprings, animated, interpolate } from "react-spring";
+
 import Slide from 'react-reveal/Slide';
-import Rotate from 'react-reveal/Rotate';
 
-import AlertError from './AlertError';
-import AlertSuccess from './AlertSuccess';
 
 import '../index.css';
 
@@ -17,22 +14,94 @@ import snow2 from '../assets/images/snowboarding/snow2.png';
 import snow3 from '../assets/images/snowboarding/snow3.png';
 import snow4 from '../assets/images/snowboarding/snow4.png';
 
+
+
+const finalPuzzle = [
+    {
+    id: '1',
+    thumb: `${snow1}`
+    },
+
+            {
+    id: '2',
+    thumb: `${snow4}`
+    },
+
+            {
+    id: '3',
+    thumb: `${snow2}`
+    },
+
+            {
+    id: '4',
+    thumb: `${snow3}`
+    }
+]
+
 const Snowboarding = () => {
+    // create state using list items
+    const [snowPuzzles, updateSnowPuzzles] = useState(finalPuzzle)
+
+    //update state any time item is dragged
+    function handleOnDragEnd(result) {
+  
+        //create a new copy of our snowPuzzles
+        const items = Array.from(snowPuzzles);
+
+        //use source.index value to find our item from new array and remove it using splice
+        //result is destructured and end up with new object of reorderedItem (our dragged item)
+        const [reorderedItems] = items.splice(result.source.index, 1);
+
+        //then use destination.index to add that item back into the array, but at a new location using splice
+        items.splice(result.destination.index, 0, reorderedItems)
+
+        //update snowPuzzles state using the updateSnowPuzzles function
+        updateSnowPuzzles(items);
+    }
+
     return (
        <div className="snow-page">
         <div className="snow-bg">
-            <div className="snow-div">
-            <Slide left>
+        <div className="snow-div">
+        <Slide left>
 
+        <DragDropContext onDragEnd={handleOnDragEnd}>
+        <Droppable droppableId="snowPuzzles">
+
+            {(provided) => ( 
+                //provided includes info and ref to code from library to work properly
+                //provided.droppableProps allows library to keep track of movements and positioning
+                //provided.innerRef is created for the library to access the list element's HTML elements
                 
-                <img className="snowpuzzle" src={snow1}/>
+                <ul className="snowPuzzles" {...provided.droppableProps} ref={provided.innerRef}> 
+                    {snowPuzzles.map(({id, thumb, index}) => {
+                    
+                    return (
+                    <Draggable key={id} draggableId={id} index={index}>
+                    
+                    {(provided) => (
 
-                <img className="snowpuzzle" src={snow2}/>
+                        //provided.innerRef adds a reference to the library
+                        //... spreads additional props from the provided argument
+                        // provided.placeholder fills up the space that held the item we're dragging
+                        <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} key={id}>
+                            <div className="snow-thumb">
+                                <img className="snow-img" src={thumb} alt={`Thumb`}/>
+                            </div>
 
-                <img className="snowpuzzle" src={snow3}/>
-  
-                <img className="snowpuzzle" src={snow4}/>                                                
-  
+                        </li>
+                    )}
+                    </Draggable>
+                    );
+                    })}    
+                    {provided.placeholder} 
+                </ul>
+                
+            )}   
+
+        </Droppable>
+        </DragDropContext>
+
            </Slide>
             </div>
         </div>

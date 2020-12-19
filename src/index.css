@@ -34,6 +34,10 @@ code {
 
 /*------------------------- Landing -----------------------*/
 
+header
+
+/*------------------------- Landing -----------------------*/
+
 .img-world {
     position: absolute;
     height: 600px;
@@ -107,32 +111,27 @@ code {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 80%;
-    min-height: 100vh;
+
 }
 
-.snow-div > .snowpuzzle{
+.snow-div{
     background-color: rgb(255,255,255, .7);
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    padding: 20px;
-
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 
-.snowpuzzle {
 
-    height: 140px;
-    width: 50%;
-
- 
+ul, .snowPuzzles {
+    list-style: none; 
 }
 
+.snow-img {
+    height: 10%;
+    width: 70%;
+    margin-left: 10%;
+}
 
 /*------------------------- Destinations -----------------------*/
 .destination-ul-list {
@@ -143,7 +142,7 @@ code {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
 	}
 
 .destination-li-icons{
