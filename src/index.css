@@ -111,7 +111,13 @@ code {
 
 }
 
+.travel-form {
+    text-align: center;  
+}
 
+.travel-input {
+    text-align: center;
+}
 
 /*------------------------- Camping -----------------------*/
 .camping-page > .camping-bg {

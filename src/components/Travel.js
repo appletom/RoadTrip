@@ -1,17 +1,40 @@
+
+
 import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 
+import api from '../hooks/YelpAPI/api';
+import config from '../hooks/YelpAPI/config';
 import Form from './Form'
+
 
 import '../index.css';
 
+const dotenv = require('dotenv').config({path: __dirname + '/.env'});
+
+
 class Travel extends Component {
 
-    getTravel = (e) => { // responsible for making API call
+    getTravel = async (e) => { // responsible for making API call
+        const url = 'https://api.yelp.com/'
+        
         const searchInput = e.target.elements.searchInput.value;
         e.preventDefault();
-        console.log(searchInput);
-    }
+        
+        const api_call = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization:  'Bearer' + `${process.env.REACT_APP_API_KEY}`,
+                'Access-Control-Allow-Origin': 'https://www.yelp.com',
+                Location: 'https://api.yelp.com'
+            }
+            
+            })
+
+        }
+
+
 
     render() {
         return (
