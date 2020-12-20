@@ -50,7 +50,7 @@ return (
                             {(provided, snapshot) => (
                                 
                                 <ListItem ref={provided.innerRef} {...provided.draggableProps}>
-                                    <span {...provided.dragHandleProps}>{puzzles[0].thumb}</span>
+                                    <span {...provided.dragHandleProps}>{puzzles[i].thumb}</span>
                                 </ListItem>
    
                             )}

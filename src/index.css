@@ -38,14 +38,17 @@ code {
 .header {
     color: orange;
     font-family: 'Montserrat';
-    margin-left: 3%;
 }
 
 .appTitle {
     font-size: 60px;
     margin-top: 2%;
+    margin-left: 5%;
 }
 
+#appDesc {
+    margin-left: 10%;
+}
 
 .img-world {
     position: absolute;
@@ -80,7 +83,7 @@ code {
 /*------------------------- Travel -----------------------*/
 .Travel-header {
     text-align: center;
-    margin: 10% 5% 5%;
+    margin: 5% 5% 5%;
     color: orange;
     font-family: 'Montserrat'
 }

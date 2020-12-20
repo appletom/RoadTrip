@@ -46,7 +46,7 @@ class App extends Component {
     <div className="header">
       <header>
         <h1 className="appTitle">ROAD TRIP</h1>
-        <h5>games and adventures</h5>        
+        <h5 id="appDesc">games and adventures</h5>        
       </header>
     </div>
     </Zoom>

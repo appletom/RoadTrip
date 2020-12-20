@@ -15,7 +15,7 @@ render() {
                 <header className="Travel-header">
                     <h1 className="Travel-title">Travel</h1>
                 </header>
-                <Form getTravel={this.getTravel}/>
+                <Form />
             </div>
         )
     }
