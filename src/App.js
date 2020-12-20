@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { useEntityComponentSystem } from 'react-entity-component-system'
+import Zoom from 'react-reveal';
+import Draggable from 'react-draggable';
 
 import './index.css';
 
@@ -12,12 +14,6 @@ import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
 
-//import Zoom from './components/Zoom';
-
-//import Header from './components/Header';
-//import Footer from './components/Footer';
-
-import Draggable from 'react-draggable';
 
 
 class App extends Component {
@@ -54,9 +50,13 @@ class App extends Component {
     return (
 
   <div className="App">
+    <header>
+      <Zoom >
+          <h1 className="appTitle">ROAD TRIP</h1>
+      </Zoom>
+    </header>
 
-
-  <main>
+    <main>
 
 
     <Switch>
@@ -70,7 +70,7 @@ class App extends Component {
     </Switch>
 
 
-  </main>
+    </main>
 
 
   </div>

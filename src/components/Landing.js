@@ -1,31 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+
+
 import Map from '../assets/images/landing/world.png';
 import cloud from '../assets/images/landing/a_cloud.png';
 import clouds from '../assets/images/landing/clouds.png';
 import styled, { keyframes } from 'styled-components';
-//import { bounce } from 'react-animations';
-//import Zoom from './Zoom';
-/* 
-const Bounce = styled.div`
-animation: 2s ${keyframes`{bounce}`} infinite`;
- */
+
+import Destinations from './Destinations';
+import ZoomClass from './ZoomClass';
+
+
 const Landing = () => {
     return (
-        <div>
-        <img className="img-clouds" src={clouds} alt="clouds" />
-
-        <a href="/destinations">
-        <img className="img-world" src={Map} alt="world map" />
-
-        </a>
-
-
-{/*         <Zoom>
-        <h1>ROAD TRIP</h1>
-        </Zoom> */}
+        <div className="landing-div">
+            <img className="img-clouds" src={clouds} alt="clouds" />
+            
+            <Link to="./Destinations"><img className="img-world" src={Map} alt="world map" />
+            </Link>
         </div>
     )
 }
+
 
 
 export default Landing
