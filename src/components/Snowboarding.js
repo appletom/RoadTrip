@@ -21,64 +21,69 @@ import '../index.css';
 const Snowboarding = () => {
     const puzzles = PuzzlePieces.getPuzzles();
 
+    return (
+        <div className="snow-page">
+        <div className="snow-bg">
+            <div className="snow-div">
+                <DragDropContext onDragEnd={(param) => {
+                    const srcIndex = param.source.index;
+                    const destIndex = param.destination.index;
 
- 
+                    //to make draggable items stay in place
+                    //const.splice(startingParam, deleteCount, insertCount)[startAtIndex]
+                    puzzles.splice(destIndex, 0, puzzles.splice(srcIndex, 1)[0]) 
+                    
+                    console.log(param);
+                }}>
+                <Container>
+                <h1>Puzzles</h1>    
 
-return (
-    <div className="snow-page">
-    <div className="snow-bg">
-        <div className="snow-div">
-            <DragDropContext onDragEnd={(...props) => {
-                console.log(props);
-            }}>
-            <Container>
-            <h1>Puzzles</h1>    
-
-            <Droppable droppableId="droppable-1">
-                {(provided, _) => (
-                    <div ref={provided.innerRef} {...provided.droppableProps}>
-                        <ul>
-{/*                     <img className="snow-img" src={snow3} alt={`Thumb`}/>
-                        <img className="snow-img" src={snow1} alt={`Thumb`}/>
-                        <img className="snow-img" src={snow4} alt={`Thumb`}/>
-                        <img className="snow-img" src={snow2} alt={`Thumb`}/>
- */}
-                        
-                        
-                    {puzzles.map((item, i) => (
-                        <Draggable key={item.id} draggableId={"draggable-" + item.id} index={i}>
-                            {(provided, snapshot) => (
-                                
-                                <ListItem ref={provided.innerRef} {...provided.draggableProps}>
-                                    <span {...provided.dragHandleProps}>{puzzles[i].thumb}</span>
-                                </ListItem>
-   
+                <Droppable droppableId="droppable-1">
+                    {(provided, _) => (
+                        <div ref={provided.innerRef} {...provided.droppableProps}>
+                            <ul>
+    {/*                     <img className="snow-img" src={snow3} alt={`Thumb`}/>
+                            <img className="snow-img" src={snow1} alt={`Thumb`}/>
+                            <img className="snow-img" src={snow4} alt={`Thumb`}/>
+                            <img className="snow-img" src={snow2} alt={`Thumb`}/>
+    */}
+                            
+                            
+                        {puzzles.map((item, i) => (
+                            <Draggable key={item.id} draggableId={"draggable-" + item.id} index={i}>
+                                {(provided, snapshot) => (
+                                    
+                                    <ListItem ref={provided.innerRef} {...provided.draggableProps}>
+                                        <span {...provided.dragHandleProps}>{puzzles[i].thumb}</span>
+                                    </ListItem>
+    
+                                )}
+                            </Draggable>
+                            )
                             )}
-                        </Draggable>
-                        )
-                        )}
-                        </ul>
-                
-                    </div>
-           
-                )}
-           
-            </Droppable>
-        
-        </Container>
+                            {provided.placeholder}
+                            </ul>
+
+                        </div>
+            
+                    )}
+            
+                </Droppable>
+            
+            </Container>
 
 
-            </DragDropContext>
+                </DragDropContext>
 
+            </div>
         </div>
-    </div>
-    </div>
-)
-// Use Title and Wrapper like any other React component – except they're styled!
+        </div>
+    )
+    // Use Title and Wrapper like any other React component – except they're styled!
 
 
 
-}
+    }
     
 export default Snowboarding
 
