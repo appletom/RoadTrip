@@ -8,17 +8,16 @@ import '../index.css';
 const Form = props => (
 
     <form onSubmit={props.getTravel} className="travel-form"> 
-        <input className="searchBar" type="text" name="searchInput" placeholder="Eat, drink, gas"/>
+        <input className="searchBar" type="text" name="searchInput" placeholder="Eat, drink, explore"/>
         <input type="hidden" defaultValue={process.env.REACT_APP_API_ID}/>
         
         <div className="Travel-div">
-        <button className="travelButton">Explore</button>
+        <button className="travelButton">Search</button>
         <button className="travelButton"><Link to="./Games">Play</Link></button>
-        
         </div>
     </form>
 
-    )
 
+    )
 
 export default Form;

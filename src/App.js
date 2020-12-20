@@ -53,7 +53,7 @@ class App extends Component {
     <header >
       <Zoom >
           <h1 className="appTitle">ROAD TRIP</h1>
-          <h5 className="appDescription">games and destinations</h5>
+          <h5 className="appDescription">games and adventures</h5>
       </Zoom>
     </header>
 
