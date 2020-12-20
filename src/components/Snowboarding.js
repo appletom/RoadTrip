@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
+import styled  from 'styled-components';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-
-
-import Slide from 'react-reveal/Slide';
-
-
-import '../index.css';
 
 
 import snow1 from '../assets/images/snowboarding/snow1.png';
@@ -15,31 +10,81 @@ import snow3 from '../assets/images/snowboarding/snow3.png';
 import snow4 from '../assets/images/snowboarding/snow4.png';
 
 
+import Slide from 'react-reveal/Slide';
 
-const finalPuzzle = [
-    {
-    id: 1,
-    thumb: `${snow1}`
-    },
+import PuzzlePieces from './PuzzlePieces';
+import { Container, ListItem } from './styles'
+import '../index.css';
 
-            {
-    id: 2,
-    thumb: `${snow4}`
-    },
 
-            {
-    id: 3,
-    thumb: `${snow2}`
-    },
-
-            {
-    id: 4,
-    thumb: `${snow3}`
-    }
-]
 
 const Snowboarding = () => {
-    // create state using list items
+    const puzzles = PuzzlePieces.getPuzzles();
+
+
+ 
+
+return (
+    <div className="snow-page">
+    <div className="snow-bg">
+        <div className="snow-div">
+            <DragDropContext onDragEnd={(...props) => {
+                console.log(props);
+            }}>
+            <Container>
+            <h1>Puzzles</h1>    
+
+            <Droppable droppableId="droppable-1">
+                {(provided, _) => (
+                    <div ref={provided.innerRef} {...provided.droppableProps}>
+                        <ul>
+{/*                     <img className="snow-img" src={snow3} alt={`Thumb`}/>
+                        <img className="snow-img" src={snow1} alt={`Thumb`}/>
+                        <img className="snow-img" src={snow4} alt={`Thumb`}/>
+                        <img className="snow-img" src={snow2} alt={`Thumb`}/>
+ */}
+                        
+                        
+                    {puzzles.map((item, i) => (
+                        <Draggable key={item.id} draggableId={"draggable-" + item.id} index={i}>
+                            {(provided, snapshot) => (
+                                
+                                <ListItem ref={provided.innerRef} {...provided.draggableProps}>
+                                    <span {...provided.dragHandleProps}>{puzzles[0].thumb}</span>
+                                </ListItem>
+   
+                            )}
+                        </Draggable>
+                        )
+                        )}
+                        </ul>
+                
+                    </div>
+           
+                )}
+           
+            </Droppable>
+        
+        </Container>
+
+
+            </DragDropContext>
+
+        </div>
+    </div>
+    </div>
+)
+// Use Title and Wrapper like any other React component – except they're styled!
+
+
+
+}
+    
+export default Snowboarding
+
+/* 
+
+   // create state using list items
     const [snowPuzzles, updateSnowPuzzles] = useState(finalPuzzle)
 
     //update state any time item is dragged
@@ -60,7 +105,9 @@ const Snowboarding = () => {
         updateSnowPuzzles(items);
     }
 
-    return (
+
+    
+return (
        <div className="snow-page">
         <div className="snow-bg">
         <div className="snow-div">
@@ -75,7 +122,7 @@ const Snowboarding = () => {
                 //provided.innerRef is created for the library to access the list element's HTML elements
                 
                 <ul className="snowPuzzles" {...provided.droppableProps} ref={provided.innerRef}> 
-                    {snowPuzzles.map(({id, thumb, index}) => {
+                    {finalPuzzle.map(({id, thumb, index}) => {
                     
                     return (
                     <Draggable key={id} draggableId={String(id)} index={index}>
@@ -109,6 +156,4 @@ const Snowboarding = () => {
         </div>
     
     )
-}
-
-export default Snowboarding
+} */

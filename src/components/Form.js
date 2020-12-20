@@ -9,7 +9,6 @@ const Form = props => (
 
     <form onSubmit={props.getTravel} className="travel-form"> 
         <input className="searchBar" type="text" name="searchInput" placeholder="Eat, drink, explore"/>
-        <input type="hidden" defaultValue={process.env.REACT_APP_API_ID}/>
         
         <div className="Travel-div">
         <button className="travelButton">Search</button>
