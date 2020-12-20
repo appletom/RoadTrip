@@ -35,22 +35,18 @@ code {
 
 
 /*------------------------- Landing -----------------------*/
-.appTitle {
-    font-family: 'Montserrat';
-    font-size: 60px;
+.header {
     color: orange;
-    margin-left: 5%;
+    font-family: 'Montserrat';
+    margin-left: 3%;
+}
+
+.appTitle {
+    font-size: 60px;
     margin-top: 2%;
 }
 
-.appDescription {
-    font-family: 'Montserrat';
-    font-size: 20px;
-    color: orange;
-    margin-left: 10%;
-    position: absolute;
 
-}
 .img-world {
     position: absolute;
     height: 600px;

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { useEntityComponentSystem } from 'react-entity-component-system'
 import Zoom from 'react-reveal';
-import Draggable from 'react-draggable';
 
 import './index.css';
 
@@ -17,46 +16,39 @@ import Credits from './components/Credits';
 
 
 class App extends Component {
-  constructor(props) {
+/*   constructor(props) {
     super(props);
     this.state = {
-      items: [],
+
       isLoaded: false
     }
   } 
-  
-  componentDidMount() {
-    fetch('https://opentdb.com/api.php?amount=5&difficulty=easy')
-      .then(res => res.json())
-      .then(json => {
-        this.setState({
-          isLoaded: true,
-          items: json
-        })
-      });
-
-  }
+   */
 
     
   render () {
 
-    var { isLoaded, items } = this.state;
+/*     var { isLoaded, items } = this.state;
 
     if (!isLoaded) {
       return <div>Loading...</div>;
     }
-
+ */
 
     return (
 
   <div className="App">
-    <header >
-      <Zoom >
-          <h1 className="appTitle">ROAD TRIP</h1>
-          <h5 className="appDescription">games and adventures</h5>
-      </Zoom>
-    </header>
+    
+    <Zoom >
+    <div className="header">
+      <header>
+        <h1 className="appTitle">ROAD TRIP</h1>
+        <h5>games and adventures</h5>        
+      </header>
+    </div>
+    </Zoom>
 
+    <div className="main">
     <main>
 
 
@@ -72,7 +64,7 @@ class App extends Component {
 
 
     </main>
-
+    </div>
 
   </div>
   );

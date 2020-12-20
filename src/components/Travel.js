@@ -7,14 +7,31 @@ import Form from './Form'
 
 import '../index.css';
 
-const dotenv = require('dotenv').config({path: __dirname + '/.env'});
-const express = require('express');
-const app = express();
+class Travel extends Component {
+
+render() {
+        return (
+            <div className="Travel-div">
+                <header className="Travel-header">
+                    <h1 className="Travel-title">Travel</h1>
+                </header>
+                <Form getTravel={this.getTravel}/>
+            </div>
+        )
+    }
+
+}
+
+
+
+export default Travel;
+
+
+
+////////// Yelp API ///////////
+/* const dotenv = require('dotenv').config({path: __dirname + '/.env'});
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
-
-
-
 
 class Travel extends Component {
 
@@ -51,7 +68,5 @@ class Travel extends Component {
             </div>
         )
     }
-}
+} */
 
-
-export default Travel;
