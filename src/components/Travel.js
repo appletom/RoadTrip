@@ -1,7 +1,5 @@
-
-
 import React, { Component } from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+
 
 import api from '../hooks/YelpAPI/api';
 import config from '../hooks/YelpAPI/config';
@@ -38,12 +36,13 @@ class Travel extends Component {
 
     render() {
         return (
-            <div className="Travel">
+            <div className="Travel-div">
                 <header className="Travel-header">
                     <h1 className="Travel-title">Travel Search</h1>
  
                 </header>
                 <Form getTravel={this.getTravel}/>
+                
             </div>
         )
     }

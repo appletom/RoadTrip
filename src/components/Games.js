@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
-import Draggable from 'react-draggable';
+
 
 import Travel from './Travel';
 import Camping from './Camping';
@@ -12,29 +12,23 @@ import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
 
 
 
-const Destinations = () => {
+const Games = () => {
     return (
     <div>
-    <div className="destinations">
+    <div className="Games">
 
 
 
-        <ul className="destination-ul-list">
-            <li className="destination-li-icons">
-                <Link to="/Travel">
-                <img className="icontravel" src={TravelIcon} alt="Travel"/>
-                </Link>
-            </li>
- 
-            <li className="destination-li-icons">
+        <ul className="Games-ul-list"> 
+            <li className="Games-li-icons">
+                <h4>some game</h4>
                 <Link to="/Camping">
                 <img className="icon" src={CampingIcon} alt="Camping"/>
                 </Link>
             </li>
 
-
-
-            <li className="destination-li-icons">
+            <li className="Games-li-icons">
+                <h4>Solve a puzzle</h4>
                 <Link to="/Snowboarding">
                 <img className="icon" src={SnowIcon} alt="Snowboarding"/>
                 </Link>
@@ -48,4 +42,4 @@ const Destinations = () => {
     )
 }
 
-export default Destinations;
+export default Games;

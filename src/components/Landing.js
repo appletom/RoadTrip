@@ -7,7 +7,7 @@ import cloud from '../assets/images/landing/a_cloud.png';
 import clouds from '../assets/images/landing/clouds.png';
 import styled, { keyframes } from 'styled-components';
 
-import Destinations from './Destinations';
+import Travel from './Travel';
 import ZoomClass from './ZoomClass';
 
 
@@ -16,7 +16,7 @@ const Landing = () => {
         <div className="landing-div">
             <img className="img-clouds" src={clouds} alt="clouds" />
             
-            <Link to="./Destinations"><img className="img-world" src={Map} alt="world map" />
+            <Link to="./Travel"><img className="img-world" src={Map} alt="world map" />
             </Link>
         </div>
     )

@@ -7,7 +7,7 @@ import Draggable from 'react-draggable';
 import './index.css';
 
 import Landing from './components/Landing';
-import Destinations from './components/Destinations'; //where destination lives 
+import Games from './components/Games'; //where destination lives 
 import Travel from './components/Travel';
 import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
@@ -50,9 +50,10 @@ class App extends Component {
     return (
 
   <div className="App">
-    <header>
+    <header >
       <Zoom >
           <h1 className="appTitle">ROAD TRIP</h1>
+          <h5 className="appDescription">games and destinations</h5>
       </Zoom>
     </header>
 
@@ -61,7 +62,7 @@ class App extends Component {
 
     <Switch>
       <Route exact path="/" component={Landing} />
-      <Route exact path="/destinations" component = {Destinations} /> {/* /destinations is where you want {Destinations} to go */}
+      <Route exact path="/Games" component = {Games} /> {/* /destinations is where you want {Destinations} to go */}
       <Route exact path="/travel" component = {Travel} /> 
       <Route exact path="/camping" component = {Camping} /> 
       <Route exact path="/snowboarding" component = {Snowboarding} />
