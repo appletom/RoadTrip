@@ -1,46 +1,45 @@
-import React from 'react';
+import React, { Component }  from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
-import Beach from './Beach';
+import Travel from './Travel';
 import Camping from './Camping';
 import Snowboarding from './Snowboarding';
 
-import BeachIcon from '../assets/images/beach/iconbeach.png';
+import TravelIcon from '../assets/images/travel/travelicon.jpg';
 import CampingIcon from '../assets/images/camping/icontent.png';
 import SnowIcon from '../assets/images/snowboarding/iconpenguin.png';
 
+
+
 const Destinations = () => {
     return (
-
     <div>
+    <div className="destinations">
 
 
-    <Draggable>
-    <div>I can now be moved around!</div>
-    </Draggable>
 
-
-    <div className="destination-list">
         <ul className="destination-ul-list">
             <li className="destination-li-icons">
-                <Link to="/Beach">
-                <img className="iconbeach" src={BeachIcon} alt="Beach"/>
+                <Link to="/Travel">
+                <img className="icontravel" src={TravelIcon} alt="Travel"/>
+                </Link>
+            </li>
+ 
+            <li className="destination-li-icons">
+                <Link to="/Camping">
+                <img className="icon" src={CampingIcon} alt="Camping"/>
                 </Link>
             </li>
 
-            <li className="destination-li-icons">
-                <Link to="/Camping">
-                <img className="iconcamping" src={CampingIcon} alt="Camping"/>
-                </Link>
-            </li>
+
 
             <li className="destination-li-icons">
                 <Link to="/Snowboarding">
-                <img className="iconsnow" src={SnowIcon} alt="Snowboarding"/>
+                <img className="icon" src={SnowIcon} alt="Snowboarding"/>
                 </Link>
             </li>
-    
+
         </ul>
     </div>
 

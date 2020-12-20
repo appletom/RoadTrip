@@ -2,8 +2,10 @@
 
 # dependencies
 /node_modules
+/modules
 /.pnp
 .pnp.js
+tiny-invariant
 
 # testing
 /coverage
@@ -14,6 +16,7 @@
 # misc
 .DS_Store
 .env
+.env.development
 .env.development.local
 .env.test.local
 .env.production.local
