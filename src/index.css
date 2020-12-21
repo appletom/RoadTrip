@@ -172,7 +172,7 @@ button, a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
-    min-height: 150vh;
+    min-height: 100vh;
 
 }
 
@@ -198,10 +198,8 @@ ul, .snowPuzzles {
 }
 
 .snow-img {
-    height: 100px;
-    width: 80%;
-    margin: 2%;
-
+    height: 100%;
+    width: 90%;
 }
 
 

@@ -16,18 +16,17 @@ import Snowboarding from './components/Snowboarding';
 import Credits from './components/Credits';
 
 
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {description: "travel the world"};
   }
-
+/* 
   componentWillMount() {
     setTimeout(() => {
     this.setState({description: "games for the road"})
-    }, 2000)
-  }
+    }, 3000)
+  } */
     
   render () {
 
@@ -48,10 +47,12 @@ class App extends Component {
 
         <h5 id="appDesc">{this.state.description}</h5> 
 
-
       </header>
     </div>
     </Zoom>
+
+
+
   </header>
 
   <div className="main">
@@ -64,7 +65,7 @@ class App extends Component {
       <Route exact path="/camping" component = {Camping} /> 
       <Route exact path="/snowboarding" component = {Snowboarding} />
     </Switch>
-    
+
   </main>
 
   </div>
