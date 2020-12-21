@@ -15,27 +15,10 @@ import '../index.css';
 class Travel extends Component {
 
 render() {
-        return (
-            <div className="Travel-div">
-
-                <header className="Travel-header">
-                    <h1 className="Travel-title">Travel</h1>
-                </header>
-                <Form />
-            </div>
-
-//https://travel.usnews.com/Bora_Bora/
-//https://travel.usnews.com/Tahiti_French_Polynesia/
-//https://travel.usnews.com/Tokyo_Japan/
-//https://travel.usnews.com/Rome_Italy/
-//https://travel.usnews.com/Phuket_Thailand/
-//https://travel.usnews.com/Bali_Indonesia/
-//https://travel.usnews.com/Cusco_Peru/Things_To_Do/Machu_Picchu_62666/
-        )
-    }
+       
 
 }
-
+}
 
 
 export default Travel;

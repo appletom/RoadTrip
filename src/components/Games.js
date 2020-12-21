@@ -2,7 +2,6 @@ import React, { Component }  from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 
 
-import Travel from './Travel';
 import Camping from './Camping';
 import Snowboarding from './Snowboarding';
 
@@ -37,7 +36,7 @@ const Games = () => {
         </ul>
     </div>
 
-
+    
     </div>
     )
 }

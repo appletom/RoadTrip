@@ -9,21 +9,25 @@ const SearchDate = () => {
     const [showCalendar, setShowCalendar] = useState
     (false);
 
+
     return (
+        <nav className="travel-nav">
         <div className="headerIcon">
             <div className="searchDate">
 
             { /* if showCalendar is true then open calendar */}
             {showCalendar && <h1>open calendar</h1>}
+            
 
-            <Button onClick={() => 
+             <Button onClick={() => 
                 setShowCalendar(!showCalendar)}
                 className="dateButton">
-                <DateRangeIcon fontSize="medium"/>
-            </Button>
+                <DateRangeIcon fontSize="small"/>
+            </Button> 
 
             </div>    
         </div>
+        </nav>
     )
 }
 

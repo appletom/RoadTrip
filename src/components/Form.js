@@ -7,12 +7,13 @@ import '../index.css';
 // stateless components require props argument to acces getTravel from './Travel'
 const Form = props => (
 
-    <form onSubmit={props.getTravel} className="travel-form"> 
+    <form onSubmit={props.getTravel} className="Form-div"> 
+    <h1 className="formHeader">Explore</h1>
         <input className="searchBar" type="text" placeholder="Eat, drink, explore"/>
         
-        <div className="Travel-div">
-        <button className="travelButton">Search</button>
-        <button className="travelButton"><Link to="../Games">Play</Link></button>
+        <div className="Form-btn-div">
+        <button className="formButton">Search</button>
+        <button className="formButton"><Link to="/Games">Play</Link></button>
         </div>
     </form>
 

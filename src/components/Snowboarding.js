@@ -27,12 +27,17 @@ const Snowboarding = () => {
             <div className="snow-div">
                 <DragDropContext onDragEnd={(param) => {
                     const srcIndex = param.source.index;
-                    const destIndex = param.destination.index;
+                    const destIndex = param.destination?.index;
+
+                    //param.destination? = adds conditional to fix param.destination is null
+                    // resolves error if item is dragged out of droppable zone
+                    if(destIndex) {
 
                     //to make draggable items stay in place
                     //const.splice(startingParam, deleteCount, insertCount)[startAtIndex]
                     puzzles.splice(destIndex, 0, puzzles.splice(srcIndex, 1)[0]) 
-                    
+                    }
+
                     console.log(param);
                 }}>
                 
@@ -46,13 +51,14 @@ const Snowboarding = () => {
                                     {puzzles.map((item, i) => (
                                         <Draggable key={item.id} draggableId={"draggable-" + item.id} index={i}>
                                             {(provided, snapshot) => (
-                                        
+                                                
                                                 // draggableProps controls the movement of draggable item when dragging or not dragging
                                                 // dragHandleProps lets you pick up the item you want to be draggable
                                                 <ListItem ref={provided.innerRef} {...provided.draggableProps}>
                                                     
                                                     <img className="snow-img" src={item.thumb} {...provided.dragHandleProps}/>                                    
                                                 </ListItem>
+                
                                             )}
                                         </Draggable>
                                     )
