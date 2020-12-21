@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { DateRangePicker } from 'react-date-range';
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
+import { PeopleIcon } from '@material-ui/icons/People';
+import { Button } from '@material-ui/core';
 
 import '../index.css';
 
@@ -16,8 +18,8 @@ const Calendar = () => {
 
         //displays date range
         const selectionRange = {
-            startDate: startDate,
-            endDate: endDate,
+            startDate,
+            endDate,
             key: "selection",
         };
 
@@ -32,8 +34,7 @@ const Calendar = () => {
                 <DateRangePicker ranges = {
                     [selectionRange]} onChange = 
                     {handleSelect} />
-                }
-                
+      
             </div>
         )
     }
