@@ -11,11 +11,11 @@ import { headerColor } from './styles'
 const TravelNavbar = () => {
     return(
         <nav className="travel-nav">
-            <div className="travel-nav-container">
+            <div className="headerIcon">
 
-            <Link to="/" className="headerIcon"><HomeIcon fontSize="medium" /></Link>                
-            <Link to="/Travel" className="headerIcon"><SearchIcon fontSize="medium" /></Link>
-            <Link to="/cart" className="headerIcon"><ShoppingCartIcon fontSize="medium" /></Link>
+            <Link to="/" ><HomeIcon fontSize="medium"/></Link>                
+            <Link to="/Travel" ><SearchIcon fontSize="medium" /></Link>
+            <Link to="/cart" ><ShoppingCartIcon fontSize="medium" /></Link>
 
             </div>
         </nav>
