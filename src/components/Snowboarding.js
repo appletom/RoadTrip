@@ -36,7 +36,7 @@ const Snowboarding = () => {
                     console.log(param);
                 }}>
                 <Container>
-                <h1>Puzzles</h1>    
+                <h1>Puzzle</h1>    
 
                 <Droppable droppableId="droppable-1">
                     {(provided, _) => (
@@ -55,6 +55,7 @@ const Snowboarding = () => {
                                     
                                     <ListItem ref={provided.innerRef} {...provided.draggableProps}>
                                         <span {...provided.dragHandleProps}>{puzzles[i].thumb}</span>
+                                    
                                     </ListItem>
     
                                 )}

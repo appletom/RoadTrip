@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const ListItem = styled.div`
-    border-bottom: 1px solid black;
+    border: 1px solid silver;
     width: 90%;
     span {
         display: inline-block;
