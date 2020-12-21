@@ -8,11 +8,11 @@ import '../index.css';
 const Form = props => (
 
     <form onSubmit={props.getTravel} className="travel-form"> 
-        <input className="searchBar" type="text" name="searchInput" placeholder="Eat, drink, explore"/>
+        <input className="searchBar" type="text" placeholder="Eat, drink, explore"/>
         
         <div className="Travel-div">
         <button className="travelButton">Search</button>
-        <button className="travelButton"><Link to="./Games">Play</Link></button>
+        <button className="travelButton"><Link to="../Games">Play</Link></button>
         </div>
     </form>
 

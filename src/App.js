@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { useEntityComponentSystem } from 'react-entity-component-system'
 import Zoom from 'react-reveal';
 
-
+import { headerColor } from './components/styles'
 import './index.css';
 
 import Landing from './components/Landing';
@@ -14,19 +14,19 @@ import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
 
 import Credits from './components/Credits';
-
+import TravelNavbar from './components/TravelNavbar';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {description: "travel the world"};
+    this.state = {description: "eat play sleep"};
   }
-/* 
+
   componentWillMount() {
     setTimeout(() => {
-    this.setState({description: "games for the road"})
+    this.setState({description: "travel the world"})
     }, 3000)
-  } */
+  }
     
   render () {
 
@@ -36,24 +36,21 @@ class App extends Component {
 
   <div className="App">
   
-    
-  <header>  
-    <Zoom >
+ 
+
     <div className="header">
-      <header>
-
-        <h1 className="appTitle">ROAD TRIP</h1>
-
-
-        <h5 id="appDesc">{this.state.description}</h5> 
-
-      </header>
+    <header>    
+      <h1 className="appTitle">ROAD TRIP</h1>
+      <h5 id="appDesc">{this.state.description}</h5> 
+    </header>
+    
+      <TravelNavbar />
+    
     </div>
-    </Zoom>
 
 
 
-  </header>
+
 
   <div className="main">
 

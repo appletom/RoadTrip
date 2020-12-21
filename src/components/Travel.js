@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import api from '../hooks/YelpAPI/api';
-import config from '../hooks/YelpAPI/config';
+
 import Form from './Form'
 
 

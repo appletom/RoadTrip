@@ -36,18 +36,20 @@ code {
 
 /*------------------------- Landing -----------------------*/
 .header {
+    display: flex;
     color: orange;
     font-family: 'Montserrat';
+    margin: 2%;
+    justify-content: space-between;
+
 }
 
 .appTitle {
-    font-size: 60px;
-    margin-top: 2%;
-    margin-left: 5%;
+    font-size: 50px;
 }
 
 #appDesc {
-    margin-left: 12%;
+    margin-left: 20%;
 }
 
 .img-world {
@@ -61,6 +63,7 @@ code {
     top: 52px;
 
 }
+
 
 .img-world:hover {
     transform: scale(1.12);
@@ -199,7 +202,7 @@ ul, .snowPuzzles {
 
 .snow-img {
     height: 100%;
-    width: 90%;
+    width: 100%;
 }
 
 

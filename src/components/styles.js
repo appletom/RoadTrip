@@ -1,6 +1,7 @@
 import React from 'react';
 import styled  from 'styled-components';
 
+
 export const Container = styled.div`
     border-radius: .2px;
     box-shadow: .5px;
@@ -17,3 +18,7 @@ export const ListItem = styled.div`
 
 `;
 
+export const headerColor = styled.div`
+    color: orange;
+
+`;
