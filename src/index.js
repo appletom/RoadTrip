@@ -7,6 +7,8 @@ import Clock from './components/Clock';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+import cartReducer from './components/reducers/cartReducer';
+
 const store = createStore(cartReducer);
 
 ReactDOM.render(
