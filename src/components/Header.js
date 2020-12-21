@@ -9,7 +9,7 @@ import { Button } from '@material-ui/core';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 
 import Form from './Form';
-import SearchDate from './SearchDate';
+import CalendarNavbar from './CalendarNavbar';
 import Zoom from 'react-reveal';
 import '../index.css';
 
@@ -38,7 +38,7 @@ class Header extends Component {
                     <Link to="/" ><Button><HomeIcon fontSize="small"/></Button></Link>                
                     <Link to="/" ><Button><SearchIcon fontSize="small" /></Button></Link>
                     <Link to="/cart" ><Button><ShoppingCartIcon fontSize="small" /></Button></Link>
-                    <SearchDate/>
+                    <CalendarNavbar/>
                 </div>    
             </div>
 

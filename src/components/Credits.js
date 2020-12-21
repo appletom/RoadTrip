@@ -28,24 +28,6 @@ class Credits extends React.Component {
           <li>      <span>Photo by <a href="https://unsplash.com/@bob_bradley?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bob Bradley</a> on <a href="https://unsplash.com/s/photos/bora-bora?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
           </li>
 
-          <li>      <span>Photo by <a href="https://unsplash.com/@diogo_pic?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Diogo Filipe</a> on <a href="https://unsplash.com/s/photos/tahiti?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </li>
-
-          <li>      <span>Photo by <a href="https://unsplash.com/@yoavaziz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Yoav Aziz</a> on <a href="https://unsplash.com/s/photos/tokyo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </li>
-
-          <li>      <span>Photo by <a href="https://unsplash.com/@cristina_gottardi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cristina Gottardi</a> on <a href="https://unsplash.com/s/photos/rome?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </li>
-
-          <li>      <span>Photo by <a href="https://unsplash.com/@markroberts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mark Roberts</a> on <a href="https://unsplash.com/s/photos/phuket?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </li>
-
-          <li>      <span>Photo by <a href="https://unsplash.com/@thesologirlstravelguide?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alexa West</a> on <a href="https://unsplash.com/s/photos/bali?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </li>
-
-          <li>      <span>Photo by <a href="https://unsplash.com/@evan_sanchez15?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Evan Sanchez</a> on <a href="https://unsplash.com/s/photos/machu-picchu?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </li>
-
     </ul>
     </div>
 

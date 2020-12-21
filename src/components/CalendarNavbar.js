@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import DateRangeIcon from '@material-ui/icons/DateRange';
+import Calendar from './Calendar';
 
-const SearchDate = () => {
+import '../index.css';
+
+const CalendarNavbar = () => {
     // showCalendar state keeps track of when calendar button is clicked
     const [showCalendar, setShowCalendar] = useState
     (false);
@@ -16,7 +19,7 @@ const SearchDate = () => {
             <div className="searchDate">
 
             { /* if showCalendar is true then open calendar */}
-            {showCalendar && <h1>open calendar</h1>}
+            {showCalendar && <Calendar />}
             
 
              <Button onClick={() => 
@@ -31,7 +34,7 @@ const SearchDate = () => {
     )
 }
 
-export default SearchDate;
+export default CalendarNavbar;
 
 
 
