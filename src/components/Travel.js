@@ -7,7 +7,6 @@ import { createStore } from 'redux';
 
 
 
-
 import Form from './Form'
 
 
@@ -18,6 +17,7 @@ class Travel extends Component {
 render() {
         return (
             <div className="Travel-div">
+
                 <header className="Travel-header">
                     <h1 className="Travel-title">Travel</h1>
                 </header>

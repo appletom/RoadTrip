@@ -5,17 +5,21 @@ import Zoom from 'react-reveal';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
+import { Button } from '@material-ui/core';
+import DateRangeIcon from '@material-ui/icons/DateRange';
 
-import { headerColor } from './styles'
+import { headerColor } from './styles';
+import SearchDate from './SearchDate';
 
 const TravelNavbar = () => {
     return(
         <nav className="travel-nav">
             <div className="headerIcon">
 
-            <Link to="/" ><HomeIcon fontSize="medium"/></Link>                
-            <Link to="/Travel" ><SearchIcon fontSize="medium" /></Link>
-            <Link to="/cart" ><ShoppingCartIcon fontSize="medium" /></Link>
+            <Link to="/" ><Button><HomeIcon fontSize="medium"/></Button></Link>                
+            <Link to="/Travel" ><Button><SearchIcon fontSize="medium" /></Button></Link>
+            <Link to="#"><Button><DateRangeIcon/></Button></Link>
+            <Link to="/cart" ><Button><ShoppingCartIcon fontSize="medium" /></Button></Link>
 
             </div>
         </nav>
