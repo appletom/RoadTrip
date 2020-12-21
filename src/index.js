@@ -8,14 +8,14 @@ import { createStore } from 'redux';
 
 import cartReducer from './components/reducers/cartReducer';
 
-const store = createStore(cartReducer);
+const store = createStore(cartReducer); 
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-    <Provider store={store}>
+    <Provider store={store}> 
     <App />
-    </Provider>
+    </Provider> 
     </Router>
 
   </React.StrictMode>,
