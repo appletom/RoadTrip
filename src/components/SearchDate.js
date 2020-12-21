@@ -1,17 +1,34 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { Button } from '@material-ui/core';
+import DateRangeIcon from '@material-ui/icons/DateRange';
 
 const SearchDate = () => {
+    // showCalendar state keeps track of when calendar button is clicked
+    const [showCalendar, setShowCalendar] = useState
+    (false);
+
     return (
-        <div className="searchDate">
-            <Button className="searchButtonDates" variant="outlined">
-                Search Dates
+        <div className="headerIcon">
+            <div className="searchDate">
+
+            { /* if showCalendar is true then open calendar */}
+            {showCalendar && <h1>open calendar</h1>}
+
+            <Button onClick={() => 
+                setShowCalendar(!showCalendar)}
+                className="dateButton">
+                <DateRangeIcon fontSize="medium"/>
             </Button>
+
+            </div>    
         </div>
     )
 }
 
 export default SearchDate;
 
+
+
+                    
