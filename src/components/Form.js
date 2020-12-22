@@ -13,7 +13,7 @@ const Form = props => (
         
         <div className="Form-btn-div">
         <button className="formButton">Search</button>
-        <button className="formButton"><Link to="/Games">Play</Link></button>
+        <button className="formButton"><Link to="./Games">Play</Link></button>
         </div>
     </form>
 

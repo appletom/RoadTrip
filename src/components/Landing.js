@@ -9,7 +9,6 @@ import styled, { keyframes } from 'styled-components';
 
 import Header from './Header';
 import Form from './Form';
-import Card from './Card';
 import Home from './Home';
 
 import cartReducer from './reducers/cartReducer';

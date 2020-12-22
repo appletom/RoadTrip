@@ -1,6 +1,9 @@
 import React, { useState, Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux'
+import { Button } from '@material-ui/core';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
 import cartReducer from './reducers/cartReducer';
 import '../index.css';
@@ -9,27 +12,42 @@ class Home extends Component {
     render() {
         const cartArray = this.props.items.map(item => {
             return (
-                <div className="card" key={item.id}>
-                    <div className="card-img">
-                        <img src={item.img} alt={item.title}/>
+                    <div className="card mb-3">
+                        <div className="row no-gutters text-black" >
+                            <div className="col-md-6">
+                            <img src={item.img} class="card-img" alt={item.title}/>
+                            </div>
+
+                            <div className="col-md-6">
+                                <div class="card-body">
+                                    <div className="img-title">
+                                        <Link to={item.src}><h3 className="card-title">{item.title}</h3></Link>
+                                    </div>
+                                    <div className="img-desc">
+                                        <h5 className="card-text">{item.desc}</h5>
+                                    </div>
+                                    <div className="img-price">
+                                        <h5 className="card-text">{item.price}</h5>
+                                    </div>
+                                    <div className="img-btn">
+                                    <Button ><AddCircleOutlineIcon fontSize="large"/></Button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
-                </div>    
             )
         })
 
-        return (
-            <div className="container">
-                <h3 className="center">Our items</h3>
-                    <div className="box">
-                        {cartArray}
-                    </div>
-            </div>
-        )
-    }
-}
+    return (
+        <div className="container">
+            {cartArray}
+        </div>
 
+    )
+    }
+
+}
 
 const mapStateToProps = (state)=>{
     return {
@@ -40,7 +58,7 @@ const mapStateToProps = (state)=>{
 export default connect(mapStateToProps)(Home)
 
 
-/* 
+{/* 
 function Home() {
     return (
         <div className="bigDiv">
@@ -119,5 +137,5 @@ function Home() {
             </div>
         </div>
     )
-}
- */
+} */}
+ 
