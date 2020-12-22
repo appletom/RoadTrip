@@ -24,48 +24,20 @@ constructor(props) {
             return (
 
                 <div className="card ">
+                    
                     <div >
                     <span><img className="game-img" src={item.img} alt={item.title}/></span>
                     </div>
 
                     <span ><h3 >{item.title}</h3></span>
 
+                    <a href={item.src} className="game-link">
                     <h5 >{item.desc}</h5>            
                     <h5 ><b>{item.price}</b></h5>
                     <span className="game-btn"><Link to="./AddGameToCart"><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link></span>
 
+                    </a>
                     </div>
-
-
-
-                    /* <div className="card">
-                        <a href={item.src}>
-                         <div className="row no-gutters text-black" >
-                        
-                            <div className="col-md-2">
-                                <img src={item.img} class="card-img" alt={item.title}/>
-                            </div>
-
-                            <div className="col-md-12">
-                                <div class="card-body">
-                                    <div className="img-title">
-                                        <h3 className="card-title">{item.title}</h3>
-                                    </div>
-                                    <div className="img-desc">
-                                        <h5 className="card-text">{item.desc}</h5>
-                                    </div>
-                                    <div className="img-price">
-                                        <h5 className="card-text">{item.price}</h5>
-                                    </div>
-                                    <div className="img-btn">
-                                    <Link to="./AddGameToCart"><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> 
-                        </a>
-                    </div> */
 
             )
         })

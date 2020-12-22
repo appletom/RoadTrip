@@ -150,10 +150,16 @@ input {
     cursor: pointer;
     padding: 5%;
     object-fit: fill;
+
 }
 
 .card:hover {
     transform: scale(1.02);
+
+
+}
+
+.game-link, a:hover{
     text-decoration: none;
 }
 
