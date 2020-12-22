@@ -5,7 +5,7 @@ import Item3 from '../../assets/images/games/Item3.png';
 import Item4 from '../../assets/images/games/Item4.png';
 import Item5 from '../../assets/images/games/Item5.png';
 import Item6 from '../../assets/images/games/Item6.png';
-import { AddToCart } from '../actions/AddToCart';
+import { addToCartAction } from '../actions/addToCartAction';
 
 const initState = {
     items: [
@@ -21,8 +21,39 @@ const initState = {
 }
 
 const cartReducers = (state = initState, action) => {
-    return state;
 
+    if(action.type === addToCartAction) {
+
+          let addedItem = state.items.find(item=> item.id === action.id)
+          //check if the action id exists in the addedItems
+         let existed_item= state.addedItems.find(item=> action.id === item.id)
+         if(existed_item)
+         {
+            addedItem.quantity += 1 
+             return{
+                ...state,
+                 total: state.total + addedItem.price 
+                  }
+        }
+         else{
+            addedItem.quantity = 1;
+            //calculating the total
+            let newTotal = state.total + addedItem.price 
+            
+            return{
+                ...state,
+                addedItems: [...state.addedItems, addedItem],
+                total : newTotal
+            }
+            
+        }
+    }
+
+    else {
+       return state;
+
+    }
+ 
 
 
 

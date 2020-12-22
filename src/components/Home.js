@@ -5,18 +5,17 @@ import { connect } from 'react-redux'
 import { Button } from '@material-ui/core';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
-import { AddToCart } from './actions/AddToCart'
+
 import cartReducers from './reducers/cartReducers';
 import '../index.css';
 
 class Home extends Component {
-constructor(props) {
-    super(props);
-    this.state = {
-        items: []
-    }
 
-}
+    // on click, create the function that targets the id
+    handleClick = (id) => {
+        this.props.addToCart();
+
+    }
 
     render() {
 
@@ -33,18 +32,21 @@ constructor(props) {
 
                     <a href={item.src} className="game-link">
                     <h5 >{item.desc}</h5>            
- 
+                     </a>
 
-                    <div className="addCart">
+                    <div className="PriceCart">
                         <div>
                         <h5 ><b>{item.price}</b></h5>
                         </div>
-                        <div>
-                        <Link to="./AddGameToCart"><h6>Add to cart</h6><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link>
+                        <div className="addCart">
+
+                        <Button onClick="addItemToCart()">
+                            <AddCircleOutlineIcon fontSize="large"/>Add to Cart
+                        </Button>
                         </div>
                     </div>
 
-                    </a>
+
                     </div>
 
             )
@@ -65,6 +67,15 @@ const mapStateToProps = (state)=>{
       items: state.items
     }
   }
+
+//create map function to connect to reducer './cartReducer'
+//addToCart is an action exported from './addToCartAction '
+//dispatch(action) = dispatches an action and is the only way to trigger a state change
+const mapDispatchToProps = (dispatch) => {
+    return{
+        addToCartAction: (id) => {dispatch(addToCart(id))}
+    }
+}
 
 
 export default connect(mapStateToProps)(Home)
