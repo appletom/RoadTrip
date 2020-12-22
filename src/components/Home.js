@@ -34,7 +34,10 @@ constructor(props) {
                     <a href={item.src} className="game-link">
                     <h5 >{item.desc}</h5>            
                     <h5 ><b>{item.price}</b></h5>
-                    <span className="game-btn"><Link to="./AddGameToCart"><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link></span>
+
+                    <div className="addCart">
+                        <Link to="./AddGameToCart"><h6>Add to cart</h6><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link>
+                    </div>
 
                     </a>
                     </div>
