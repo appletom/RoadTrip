@@ -3,7 +3,8 @@ const loggedReducer = (state = false, action) => {
         //check the name and return state depending on name
         case 'SIGN_IN':
             return !state;
-        
+        default:
+            return state;
     }
 }
 
