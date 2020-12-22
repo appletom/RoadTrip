@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import SearchIcon from '@material-ui/icons/Search';
+
 import HomeIcon from '@material-ui/icons/Home';
 import { Button } from '@material-ui/core';
 import DateRangeIcon from '@material-ui/icons/DateRange';
@@ -36,8 +36,8 @@ class Header extends Component {
             </div>
                 <div className="headerIcon">
                     <Link to="/" ><Button><HomeIcon fontSize="small"/></Button></Link>                
-                    <Link to="/" ><Button><SearchIcon fontSize="small" /></Button></Link>
-                    <Link to="/cart" ><Button><ShoppingCartIcon fontSize="small" /></Button></Link>
+                    <Link to="/Cart" ><Button><ShoppingCartIcon fontSize="small" /></Button></Link>
+                    
                     <CalendarNavbar/>
                 </div>    
             </div>

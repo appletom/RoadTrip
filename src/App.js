@@ -7,7 +7,8 @@ import { headerColor } from './components/styles'
 import './index.css';
 
 import Landing from './components/Landing';
-import Games from './components/Games'; //where destination lives
+import Play from './components/Play'; 
+import Explore from './components/Explore'; 
 import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
 import Form from './components/Form';
@@ -27,7 +28,7 @@ class App extends Component {
 
   <div className="App">
   
-
+  <Router>
   <header>
     <Header />
 
@@ -36,9 +37,10 @@ class App extends Component {
   <main>
     <Switch>
       <Route exact path="/" component={Landing} />
-      <Route exact path="/Games" component = {Games} /> 
-      <Route exact path="/camping" component = {Camping} /> 
-      <Route exact path="/snowboarding" component = {Snowboarding} />
+      <Route exact path="/Play" component = {Play} /> 
+      <Route exact path="/Explore" component = {Explore} /> 
+      <Route exact path="/Camping" component = {Camping} /> 
+      <Route exact path="/Snowboarding" component = {Snowboarding} />
       <Route exact path="/Credits" component = {Credits} /> 
     </Switch>
 
@@ -47,7 +49,8 @@ class App extends Component {
     <Footer />
 
   </footer>
-
+  </Router>
+  
   </div>
 
 

@@ -5,23 +5,30 @@ import { connect } from 'react-redux'
 import { Button } from '@material-ui/core';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
-import cartReducer from './reducers/cartReducer';
+import { AddToCart } from './actions/AddToCart'
+import Cart from './reducers/Cart';
 import '../index.css';
 
-class Home extends Component {
+class Explore extends Component {
+
+
     render() {
+
         const cartArray = this.props.items.map(item => {
             return (
-                    <div className="card mb-3">
-                        <div className="row no-gutters text-black" >
+
+                    <div className="card">
+                        <a href={item.src}>
+                         <div className="row no-gutters text-black" >
+                        
                             <div className="col-md-6">
-                            <img src={item.img} class="card-img" alt={item.title}/>
+                                <img src={item.img} class="card-img" alt={item.title}/>
                             </div>
 
                             <div className="col-md-6">
                                 <div class="card-body">
                                     <div className="img-title">
-                                        <Link to={item.src}><h3 className="card-title">{item.title}</h3></Link>
+                                        <h3 className="card-title">{item.title}</h3>
                                     </div>
                                     <div className="img-desc">
                                         <h5 className="card-text">{item.desc}</h5>
@@ -30,19 +37,22 @@ class Home extends Component {
                                         <h5 className="card-text">{item.price}</h5>
                                     </div>
                                     <div className="img-btn">
-                                    <Button ><AddCircleOutlineIcon fontSize="large"/></Button>
+                                    <Link to="./AddGameToCart"><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
+                        </div> 
+                        </a>
                     </div>
+
             )
         })
 
     return (
-        <div className="container">
-            {cartArray}
-        </div>
+       <div className="container">
+           {cartArray}
+       </div>
 
     )
     }
@@ -55,7 +65,8 @@ const mapStateToProps = (state)=>{
     }
   }
 
-export default connect(mapStateToProps)(Home)
+
+export default connect(mapStateToProps)(Explore)
 
 
 {/* 

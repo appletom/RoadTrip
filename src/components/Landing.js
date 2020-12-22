@@ -9,9 +9,10 @@ import styled, { keyframes } from 'styled-components';
 
 import Header from './Header';
 import Form from './Form';
-import Home from './Home';
+import Play from './Play';
+import Explore from './Explore';
 
-import cartReducer from './reducers/cartReducer';
+import Cart from './reducers/Cart';
 
 import ZoomClass from './ZoomClass';
 
@@ -27,7 +28,7 @@ class Landing extends Component {
                     <img className="img-world" src={Map} alt="world map" />
 
                     <Form /> 
-                    <Home />
+                    
                 </div> 
 
 

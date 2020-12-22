@@ -6,9 +6,9 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import cartReducer from './components/reducers/cartReducer';
 
-const store = createStore(cartReducer); 
+import store from './redux/store';
+
 
 ReactDOM.render(
   <React.StrictMode>
