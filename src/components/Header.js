@@ -36,7 +36,7 @@ class Header extends Component {
             </div>
                 <div className="headerIcon">
                     <Link to="/" ><Button><HomeIcon fontSize="small"/></Button></Link>                
-                    <Link to="/Cart" ><Button><ShoppingCartIcon fontSize="small" /></Button></Link>
+                    <Link to="/cartReducers" ><Button><ShoppingCartIcon fontSize="small" /></Button></Link>
                     
                     <CalendarNavbar/>
                 </div>    

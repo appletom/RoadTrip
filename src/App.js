@@ -8,7 +8,7 @@ import './index.css';
 
 import Landing from './components/Landing';
 import Play from './components/Play'; 
-import Explore from './components/Explore'; 
+import Home from './components/Home'; 
 import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
 import Form from './components/Form';
@@ -38,7 +38,7 @@ class App extends Component {
     <Switch>
       <Route exact path="/" component={Landing} />
       <Route exact path="/Play" component = {Play} /> 
-      <Route exact path="/Explore" component = {Explore} /> 
+      <Route exact path="/Home" component = {Home} /> 
       <Route exact path="/Camping" component = {Camping} /> 
       <Route exact path="/Snowboarding" component = {Snowboarding} />
       <Route exact path="/Credits" component = {Credits} /> 

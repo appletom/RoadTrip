@@ -10,9 +10,9 @@ import styled, { keyframes } from 'styled-components';
 import Header from './Header';
 import Form from './Form';
 import Play from './Play';
-import Explore from './Explore';
+import Home from './Home';
 
-import Cart from './reducers/Cart';
+import cartReducers from './reducers/cartReducers';
 
 import ZoomClass from './ZoomClass';
 

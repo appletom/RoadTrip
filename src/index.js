@@ -5,10 +5,10 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import cartReducers from './components/reducers/cartReducers'
 
-
-import store from './redux/store';
-
+//import store from './redux/store';
+const store = createStore(cartReducers);
 
 ReactDOM.render(
   <React.StrictMode>

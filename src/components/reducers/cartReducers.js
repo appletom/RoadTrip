@@ -20,7 +20,7 @@ const initState = {
     total: 0
 }
 
-const Cart = (state = initState, action) => {
+const cartReducers = (state = initState, action) => {
     return state;
 
 
@@ -32,4 +32,4 @@ const Cart = (state = initState, action) => {
 
 
 
-export default Cart;
+export default cartReducers;

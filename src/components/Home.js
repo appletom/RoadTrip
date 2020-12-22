@@ -6,26 +6,47 @@ import { Button } from '@material-ui/core';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
 import { AddToCart } from './actions/AddToCart'
-import Cart from './reducers/Cart';
+import cartReducers from './reducers/cartReducers';
 import '../index.css';
 
-class Explore extends Component {
+class Home extends Component {
+constructor(props) {
+    super(props);
+    this.state = {
+        items: []
+    }
 
+}
 
     render() {
 
         const cartArray = this.props.items.map(item => {
             return (
 
-                    <div className="card">
+                <div className="card ">
+                    <div >
+                    <span><img className="game-img" src={item.img} alt={item.title}/></span>
+                    </div>
+
+                    <span ><h3 >{item.title}</h3></span>
+
+                    <h5 >{item.desc}</h5>            
+                    <h5 ><b>{item.price}</b></h5>
+                    <span className="game-btn"><Link to="./AddGameToCart"><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link></span>
+
+                    </div>
+
+
+
+                    /* <div className="card">
                         <a href={item.src}>
                          <div className="row no-gutters text-black" >
                         
-                            <div className="col-md-6">
+                            <div className="col-md-2">
                                 <img src={item.img} class="card-img" alt={item.title}/>
                             </div>
 
-                            <div className="col-md-6">
+                            <div className="col-md-12">
                                 <div class="card-body">
                                     <div className="img-title">
                                         <h3 className="card-title">{item.title}</h3>
@@ -44,7 +65,7 @@ class Explore extends Component {
 
                         </div> 
                         </a>
-                    </div>
+                    </div> */
 
             )
         })
@@ -66,7 +87,7 @@ const mapStateToProps = (state)=>{
   }
 
 
-export default connect(mapStateToProps)(Explore)
+export default connect(mapStateToProps)(Home)
 
 
 {/* 

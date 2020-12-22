@@ -37,7 +37,7 @@ code {
 /*------------------------- Header -----------------------*/
 .header {
     display: flex;
-    color: orange;
+    color: rgb(255, 102, 0);
     font-family: 'Montserrat';
     width: 100%;
     margin-left: 5%;
@@ -48,7 +48,7 @@ code {
     display: flex;
     align-items: center;
     float: right;
-    margin-left: 50%;
+    margin-left: 40%;
 
 }
 
@@ -76,7 +76,7 @@ code {
 
 .img-world {
 
-    height: 600px;
+    height: 700px;
     width: 950px;
     margin-left: 4%;
     z-index: 12;
@@ -87,19 +87,19 @@ code {
 
 .img-clouds {
     position: absolute;
-    margin-left: 20%;
+    margin-left: 10%;
     z-index: -10;
-    height: 400px;
+    height: 500px;
     width: 650px;
-    left: 9%;
+
 }
 
 
 
 /*------------------------- Form -----------------------*/
 .Form-div {
-    background-color: RGB( 74, 181, 244);
-    padding: 8% 10% 10%;
+    background-color: rgb(255, 117, 26);
+    padding: 5% 8% 8%;
     text-align: center;
 }
 
@@ -110,9 +110,9 @@ code {
 
 .searchBar {
     text-align: center;
-    width: 40%;
+    width: 30%;
     outline-width: 0;
-    padding: 8px;
+    padding: 6px;
     border: none;
     border-radius: 999px;
     margin: 5%;
@@ -120,7 +120,7 @@ code {
 
 input {
     font-family: "Nunito";
-    font-size: 14pt;
+    font-size: 12pt;
     border: none;
 
 }
@@ -130,7 +130,6 @@ input {
     width: 12%;
     color: rgb(7, 120, 250);
     border-radius: 10px;
-    margin-top: 5%;
     background-color: white;
     text-transform: inherit;
 }
@@ -145,10 +144,12 @@ input {
 /*------------------------- Explore -----------------------*/
 
 .card{
-    margin: 20px;
+    margin: 80px;
     box-shadow: 0px 8px 12px 0px rgb(0,0,0, .6);
     transition: transform 100ms ease-in;
     cursor: pointer;
+    padding: 5%;
+    object-fit: fill;
 }
 
 .card:hover {
@@ -156,32 +157,17 @@ input {
     text-decoration: none;
 }
 
-.card-body{
-    background-color: yellow;
-    
-
+.game-img {
+    max-height: 80%;
+    max-width: 100%;
+   margin-bottom: 8%;
 }
 
-.card-img{
-    height: 100%;
+.game-btn {
+      text-align: right;
+      z-index: 5;
+
 }
-
-
-.card-title {
-    text-align: center;
-    padding: 3%;
-    text-decoration: none;
-}
-
-.img-price {
-    text-align: left;
-}
-
-
-.img-btn {
-    text-align: right;
-}
- 
 /*------------------------- Games -----------------------*/
 
 .Games {
@@ -197,7 +183,7 @@ input {
 	}
 
 
-.Games-li-icons, img {
+.Games-li-icons {
     transition: transform .2s; 
     height: 250px;
     margin-left: 20%;
