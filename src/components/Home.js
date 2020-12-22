@@ -33,10 +33,15 @@ constructor(props) {
 
                     <a href={item.src} className="game-link">
                     <h5 >{item.desc}</h5>            
-                    <h5 ><b>{item.price}</b></h5>
+ 
 
                     <div className="addCart">
+                        <div>
+                        <h5 ><b>{item.price}</b></h5>
+                        </div>
+                        <div>
                         <Link to="./AddGameToCart"><h6>Add to cart</h6><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link>
+                        </div>
                     </div>
 
                     </a>

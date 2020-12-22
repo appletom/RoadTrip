@@ -161,6 +161,7 @@ input {
 
 .game-link, a:hover{
     text-decoration: none;
+    color: black;
 }
 
 .game-img {
@@ -170,18 +171,15 @@ input {
 }
 
 .addCart {
-
     padding: 10px;
-    max-width: 30%;
+    max-width: 40%;
     text-align: center;
     align-items: center;
     display: flex;
     z-index: 5;
-    text-align: center;
-    margin-left: 70%;
+    justify-content: space-around;
+    margin-left: 60%;
 }
-
-
 /*------------------------- Games -----------------------*/
 
 .Games {
