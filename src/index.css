@@ -110,14 +110,9 @@ code {
 
 }
 
-.searchBar {
-    text-align: center;
-    width: 30%;
-    outline-width: 0;
-    padding: 6px;
-    border: none;
-    border-radius: 999px;
-    margin: 5%;
+.featured {
+    background-image: url("https://miro.medium.com/max/1000/1*NlqpTTAM8DbGl4paBmjE_g.jpeg");
+    height: 10px;
 }
 
 input {
@@ -129,7 +124,8 @@ input {
 
 
 .formButton {
-    margin: 2%;
+
+    margin: 3%;
     width: 12%;
     color: rgb(7, 120, 250);
     border-radius: 10px;
@@ -165,9 +161,13 @@ input {
 
 }
 
-.game-link, a:hover{
-    text-decoration: none;
+.game-link, .game-link:hover {
     color: black;
+}
+
+
+a:hover{
+    text-decoration: none;
 }
 
 .game-img {
@@ -176,7 +176,7 @@ input {
    margin-bottom: 8%;
 }
 
-.addCart {
+.PriceCart {
     padding: 10px;
     max-width: 40%;
     text-align: center;
@@ -186,6 +186,11 @@ input {
     justify-content: space-around;
     margin-left: 60%;
 }
+
+.addCart:hover {
+    color: orange;
+}
+
 /*------------------------- Games -----------------------*/
 /* 
 .Games {

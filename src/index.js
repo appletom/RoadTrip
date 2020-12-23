@@ -5,11 +5,16 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import cartReducers from './components/reducers/cartReducers'
-//import allReducers  from './components/reducers';
 
-//import store from './redux/store';
-const store = createStore(cartReducers);
+import cartReducers from './components/reducers/cartReducers'
+import allReducers  from './components/reducers/index';
+
+
+const store = createStore(
+  allReducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
+
 
 ReactDOM.render(
   <React.StrictMode>
