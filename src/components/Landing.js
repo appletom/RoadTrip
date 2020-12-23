@@ -8,9 +8,10 @@ import clouds from '../assets/images/landing/clouds.png';
 import styled, { keyframes } from 'styled-components';
 
 import Header from './Header';
+import Footer from './Footer';
 import Form from './Form';
 import Play from './Play';
-import Home from './Home';
+import Browse from './Browse';
 
 import cartReducers from './reducers/cartReducers';
 
@@ -28,7 +29,7 @@ class Landing extends Component {
                     <img className="img-world" src={Map} alt="world map" />
 
                     <Form /> 
-                    
+        
                 </div> 
 
 

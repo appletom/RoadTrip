@@ -5,9 +5,13 @@ import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 import HomeIcon from '@material-ui/icons/Home';
+import Search from '@material-ui/icons/Search';
 import { Button } from '@material-ui/core';
 import DateRangeIcon from '@material-ui/icons/DateRange';
+import { useSelector } from 'react-redux';
 
+import Browse from './Browse';
+import Cart from './Cart';
 import Form from './Form';
 import CalendarNavbar from './CalendarNavbar';
 import Zoom from 'react-reveal';
@@ -21,7 +25,7 @@ class Header extends Component {
 
   componentWillMount() {
     setTimeout(() => {
-    this.setState({description: "travel the world"})
+    this.setState({description: "games and activities"})
     }, 3000)
   }
 
@@ -36,8 +40,10 @@ class Header extends Component {
             </div>
                 <div className="headerIcon">
                     <Link to="/" ><Button><HomeIcon fontSize="small"/></Button></Link>                
-                    <Link to="/cartReducers" ><Button><ShoppingCartIcon fontSize="small" /></Button></Link>
-                    
+                    <Link to="/Cart" ><Button><ShoppingCartIcon fontSize="small" /></Button></Link>
+                    <Link to="/Browse" ><Button><Search fontSize="small"/></Button></Link>       
+
+
                     <CalendarNavbar/>
                 </div>    
             </div>

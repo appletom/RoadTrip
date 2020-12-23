@@ -5,11 +5,13 @@ import { connect } from 'react-redux'
 import { Button } from '@material-ui/core';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
-import { AddToCart } from './actions/AddToCart'
+
+import Cart from './Cart'
+
 import cartReducers from './reducers/cartReducers';
 import '../index.css';
 
-class Home extends Component {
+class Browse extends Component {
 constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +21,7 @@ constructor(props) {
 }
 
     render() {
+
 
         const cartArray = this.props.items.map(item => {
             return (
@@ -40,7 +43,7 @@ constructor(props) {
                         <h5 ><b>{item.price}</b></h5>
                         </div>
                         <div>
-                        <Link to="./AddGameToCart"><h6>Add to cart</h6><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link>
+                        <Link to="./Cart"><h6>Add to cart</h6><Button ><AddCircleOutlineIcon fontSize="large"/></Button></Link>
                         </div>
                     </div>
 
@@ -67,7 +70,7 @@ const mapStateToProps = (state)=>{
   }
 
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps)(Browse)
 
 
 {/* 

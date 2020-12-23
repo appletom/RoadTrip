@@ -42,7 +42,7 @@ const Snowboarding = () => {
                 }}>
                 
                 <Container>
-                    <h1>Puzzle</h1>    
+                    <h4>Solve this Puzzle</h4>    
 
                     <Droppable droppableId="droppable-1">
                         {(provided, _) => (
