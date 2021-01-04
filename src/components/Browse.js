@@ -1,39 +1,35 @@
 import React, { useState, Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
-import { connect } from 'react-redux'
+import { connect, useSelector } from 'react-redux'
 import { Button } from '@material-ui/core';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
+import { addToCartAction } from './actions/addToCartAction';
 
-import Cart from './Cart'
-
-import cartReducers from './reducers/cartReducers';
+//import CartReducers from './reducers/cartReducers';
 import '../index.css';
 
+
 class Browse extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            items: []
-        }
+
+
+     // on click, create the function that targets the id
+     handleClick = (id) => {
+        this.props.addToCartAction(id);
     }
-
-    // on click, create the function that targets the id
-/*     handleClick = (id) => {
-        this.props.addToCart();
-
-    } */
-
     render() {
 
 
         const cartArray = this.props.items.map(item => {
+            //const counter = useSelector(state => state.counter);
+
+
             return (
 
-                <div className="card ">
+                <div className="card " key={item.id}>
                     
                     <div >
+                        
                     <span><img className="game-img" src={item.img} alt={item.title}/></span>
                     </div>
 
@@ -50,10 +46,12 @@ class Browse extends Component {
 
                         <div className="addCart">
 
-                        <Button onClick="addItemToCart()">
+                        <span to="/">
+                        <Button onClick={() => {this.handleClick(item.id)}}>
                             <AddCircleOutlineIcon fontSize="large"/>Add to Cart
                         </Button>
-
+                        </span>
+                        
                         </div>
                     </div>
 
@@ -82,15 +80,15 @@ const mapStateToProps = (state)=>{
 //create map function to connect to reducer './cartReducer'
 //addToCart is an action exported from './addToCartAction '
 //dispatch(action) = dispatches an action and is the only way to trigger a state change
-/* const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
     return{
-        addToCartAction: (id) => {dispatch(addToCart(id))}
+        addToCartAction: (id) => {dispatch(addToCartAction(id))}
     }
-} */
+} 
 
+//mapStateToProps takes state in cartReducer and passes it as props in file
+export default connect(mapStateToProps, mapDispatchToProps)(Browse)
 
-//export default connect(mapStateToProps)(Browse)
-export default (Browse)
 
 /* 
 function Home() {

@@ -5,7 +5,12 @@ import Item3 from '../../assets/images/games/Item3.png';
 import Item4 from '../../assets/images/games/Item4.png';
 import Item5 from '../../assets/images/games/Item5.png';
 import Item6 from '../../assets/images/games/Item6.png';
-import { addToCartAction } from '../actions/addToCartAction';
+
+
+import { ADD_TO_CART } from '../actions/addToCartAction';
+import { REMOVE_FROM_CART } from '../actions/removeFromCart';
+import { INCREASE_QUANTITY } from '../actions/increase';
+import { DECREASE_QUANTITY } from '../actions/decrease';
 
 const initState = {
     items: [
@@ -20,9 +25,10 @@ const initState = {
     total: 0
 }
 
-const cartReducers = (state = initState, action) => {
+const CartReducers = (state = initState, action) => {
 
-    if(action.type === addToCartAction) {
+
+    if(action.type === ADD_TO_CART) {
 
           let addedItem = state.items.find(item=> item.id === action.id)
           //check if the action id exists in the addedItems
@@ -49,18 +55,11 @@ const cartReducers = (state = initState, action) => {
         }
     }
 
-    else {
+    else { 
        return state;
 
     }
  
-
-
-
-    
 }
 
-
-
-
-export default cartReducers;
+export default CartReducers

@@ -6,21 +6,20 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import cartReducers from './components/reducers/cartReducers'
-import allReducers  from './components/reducers/index';
+import cartReducers from './components/reducers/cartReducers';
+//import allReducers  from './components/reducers/index';
 
 
 const store = createStore(
-  allReducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  );
+  cartReducers
+);
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
     <Provider store={store}> 
-    <App />
+      <App />
     </Provider> 
     </Router>
 

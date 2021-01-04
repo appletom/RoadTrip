@@ -1,4 +1,4 @@
-
+/* 
 const cartCounter = (state = 0, action) => {
     switch(action.type) {
         case "INCREMENT":
@@ -10,4 +10,4 @@ const cartCounter = (state = 0, action) => {
     }
 }
 
-export default cartCounter;
+export default cartCounter; */

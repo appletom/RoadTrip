@@ -23,7 +23,7 @@ class Header extends Component {
     this.state = {description: "eat play sleep"};
   }
 
-  componentWillMount() {
+  componentDidMount() {
     setTimeout(() => {
     this.setState({description: "games and activities"})
     }, 3000)
