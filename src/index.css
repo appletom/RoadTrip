@@ -99,14 +99,13 @@ code {
 
 /*------------------------- Form -----------------------*/
 .Form-div {
-/*    background-color: rgb(255, 117, 26);*/
     background-color: aliceblue;
     padding: 5% 8% 8%;
     text-align: center;
 }
 
 .formHeader {
-    color: rgb(255, 117, 26);
+    color: black;
 
 }
 
@@ -136,13 +135,9 @@ input {
 
 .formButton:hover {
     transform: scale(1.08);
-    border: none;
     text-decoration: none;
-    background-color: rgb(255, 117, 26);
 }
-.formButton:hover, a:hover {
-    color: white;
-}
+
 /*------------------------- Explore -----------------------*/
 
 .card{
@@ -220,8 +215,14 @@ a:hover{
 
 
 /*------------------------- Cart -----------------------*/
-.cart-items-added {
-    background-color: yellow;
+.items-added-img {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.list-items-added {
+    list-style: none; 
 }
 
 /*------------------------- Snowboarding -----------------------*/

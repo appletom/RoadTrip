@@ -36,10 +36,12 @@ class Cart extends Component{
             (
                 this.props.items.map(item => {
                     return (
-                        <div className="container">
-                        <li className="cart-items-added" key={item.id}>
-                            <div className="items-added-img">
-                                <img src={item.img} alt={item.img} />
+                        <div className="card col-md-6 cart-card">
+                        
+                        <li className="list-items-added" key={item.id}>
+
+                            <div >
+                                <img src={item.img} alt={item.img} className="items-added-img"/>
                             </div>
 
 
@@ -54,13 +56,11 @@ class Cart extends Component{
                                     <h6><Link to="/Cart" onClick={() => {this.incQty(item.id)}}>Add quantity</Link></h6>
                                     <h6><Link to="/Cart" onClick={() => {this.decQty(item.id)}}>Subtract quantity</Link></h6>
                                 </div>
-
-
                             </div>
-
-
                         </li>
                         </div>
+                     
+                
 
                     )
                 })
