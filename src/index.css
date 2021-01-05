@@ -219,17 +219,10 @@ a:hover{
 }  */
 
 
-/*------------------------- Camping -----------------------*/
-.camping-page > .camping-bg {
-    background: url('./assets/images/camping/themecamping.jpg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom center;
-    min-height: 100vh;
+/*------------------------- Cart -----------------------*/
+.cart-items-added {
+    background-color: yellow;
 }
-
-
 
 /*------------------------- Snowboarding -----------------------*/
 .snow-page > .snow-bg {
