@@ -1,13 +1,13 @@
 
 body {
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  background-color: aliceblue;
+    background-color: white;
 }
 
 code {
@@ -34,101 +34,190 @@ code {
 
 
 
-/*------------------------- Landing -----------------------*/
-.appTitle {
+/*------------------------- Header -----------------------*/
+.header {
+    display: flex;
+    color: lightblue;
     font-family: 'Montserrat';
-    font-size: 60px;
-    padding: 1%;
-    color: orange;
+    width: 100%;
     margin-left: 5%;
+    margin-top: 5%;
 }
 
+.headerIcon {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-left: 40%;
+    z-index: 5;
+
+}
+
+.appTitle {
+    font-size: 50px;
+
+}
+
+#appDesc {
+    margin-left: 15%;
+}
+
+.Calendar {
+    position: absolute;
+    left: 35%;
+    width: 100vw;
+    margin: 4%;
+    border-radius: 10px;
+    outline-width: 1;
+    border-color: lightgrey;
+}
+
+
+/*------------------------- Landing -----------------------*/
 
 .img-world {
-    position: absolute;
+
     height: 600px;
     width: 950px;
-    margin-left: 10%;
-    background-size: cover;
+    margin-left: 4%;
     z-index: 12;
-    margin-top: 2%;
-    top: 52px;
-    transform: rotate(10deg);
+  
 }
 
-.img-world:hover {
-    transform: scale(1.12);
-    background-color: transparent;
-}
+
 
 .img-clouds {
     position: absolute;
-    z-index: 12;
-    margin-left: 5%;
-    margin-top: 6%;
-    height: 400px;
+    margin-left: 10%;
+    z-index: -10;
+    height: 500px;
     width: 650px;
-    top: -62px;
-    left: 9%;
+
 }
 
 
 
-/*------------------------- Destinations -----------------------*/
+/*------------------------- Form -----------------------*/
+.Form-div {
+/*    background-color: rgb(255, 117, 26);*/
+    background-color: aliceblue;
+    padding: 5% 8% 8%;
+    text-align: center;
+}
+
+.formHeader {
+    color: rgb(255, 117, 26);
+
+}
+
+.featured {
+    background-image: url("https://miro.medium.com/max/1000/1*NlqpTTAM8DbGl4paBmjE_g.jpeg");
+    height: 10px;
+}
+
+input {
+    font-family: "Nunito";
+    font-size: 12pt;
+    border: none;
+
+}
 
 
-.destination-ul-list {
-    list-style-type: none;
-	min-width: 500px;
+.formButton {
+
+    margin: 3%;
+    width: 12%;
+    color: rgb(7, 120, 250);
+    border-radius: 10px;
+    background-color: white;
+    text-transform: inherit;
+
+}
+
+.formButton:hover {
+    transform: scale(1.08);
+    border: none;
+    text-decoration: none;
+    background-color: rgb(255, 117, 26);
+}
+.formButton:hover, a:hover {
+    color: white;
+}
+/*------------------------- Explore -----------------------*/
+
+.card{
+    margin: 50px;
+    box-shadow: 0px 8px 12px 0px rgb(0,0,0, .6);
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    padding: 5%;
+
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+
+
+}
+
+.game-link, .game-link:hover {
+    color: black;
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+
+.game-img {
+    max-height: 50%;
+    max-width: 100%;
+   margin-bottom: 8%;
+}
+
+.PriceCart {
+    padding: 10px;
+    max-width: 40%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    z-index: 5;
+    justify-content: space-around;
+    margin-left: 60%;
+}
+
+.addCart:hover {
+    color: orange;
+}
+
+/*------------------------- Games -----------------------*/
+/* 
+.Games {
+    margin: 8%;
+}
+
+.Games-ul-list {
+	min-width: 100vh;
 	list-style: none;
     display: flex;
-    position: absolute;
-    top: 15%;
-
+    text-align: center;
 
 	}
 
-.destination-li-icons{
-	display: inline;
-    background-color: white;
-    border-radius: 50%;    
-    margin: 40px;
-}
 
-.destination-li-icons, img {
+.Games-li-icons {
     transition: transform .2s; 
+    height: 250px;
+    margin-left: 20%;
+    padding: 10%;
 }
 
-.icon {
-    height: 200px;
-    border-radius: 50%;    
-}
 
-.destination-li-icons:hover {
+.Games-li-icons:hover {
     transform: scale(1.2); 
-} 
+}  */
 
-.icontravel {
-    height: 200px;
-    border-radius: 50%;   
-}
-
-
-
-/*------------------------- Travel -----------------------*/
-.Travel-header {
-    text-align: center;
-    margin: 5%;
-
-}
-
-.travel-form {
-    text-align: center;  
-}
-
-.travel-input {
-    text-align: center;
-}
 
 /*------------------------- Camping -----------------------*/
 .camping-page > .camping-bg {
@@ -144,21 +233,23 @@ code {
 
 /*------------------------- Snowboarding -----------------------*/
 .snow-page > .snow-bg {
-    background: url('./assets/images/snowboarding/themesnow2.png'); 
+/*    background: url('./assets/images/snowboarding/themesnow2.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center 80%;
+    background-position: center top;
     min-height: 100vh;
-
+    margin-left:  10%;
+    color: orange;
 }
 
 .snow-div{
     background-color: rgb(255,255,255, .9);
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    min-height: 100vh;
+    width: 70%;
+    margin:  5%;
+    max-height: 100vh;
+    position: absolute;
+
 }
 
 
@@ -173,75 +264,25 @@ ul, .snowPuzzles {
 }
 
 .snow-img {
-    height: 110px;
-    width: 80%;
-    margin: 1%;
-
-}
-
-
-
-
-
-/*------------------------- alertSuccess -----------------------*/
-
-.cart-success-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.cart-success-wrapper h2 {
+    height: 100%;
     width: 100%;
-
 }
 
-.item {
-    margin-right: 20px;
+/*------------------------- Credits -----------------------*/
+
+.credits {
+    text-align: center;
+    margin: 5% 5% 15%;
 }
 
-.alert-wrapper.success {
-    border: #6DA06F solid 1px;
-    background-color: green;
-    width: 20%;
+/*------------------------- Footer -----------------------*/
+
+.Footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: 5%;
+    padding: 2%;
+    border-top: 1px solid lightgray;
 }
-
-.success h2 {
-    color: lightgreen;
-    
-}
-
-.success p {
-    color: lightgreen;
-}
-
-
-
-/*------------------------- alertrror -----------------------*/
-.alert-wrapper {
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-.alert-wrapper h2 {
-    margin: 0 0 10px 0;
-}
-
-.alert-wrapper.error {
-    border: #F56260 solid 1px;
-    width: 20%;
-}
-
-.error h2 {
-    color: darkred;
-}
-
-.error p {
-    color: darkred;
-}
-
-.alert-wrapper.error {
-    background-color: #F56260;
-}
-
 

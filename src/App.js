@@ -1,79 +1,59 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
-import { useEntityComponentSystem } from 'react-entity-component-system'
 import Zoom from 'react-reveal';
-import Draggable from 'react-draggable';
 
+import { headerColor } from './components/styles'
 import './index.css';
 
 import Landing from './components/Landing';
-import Destinations from './components/Destinations'; //where destination lives 
-import Travel from './components/Travel';
+import Play from './components/Play'; 
+import Browse from './components/Browse'; 
 import Camping from './components/Camping';
 import Snowboarding from './components/Snowboarding';
-
+import Form from './components/Form';
 import Credits from './components/Credits';
 
-
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: [],
-      isLoaded: false
-    }
-  } 
   
-  componentDidMount() {
-    fetch('https://opentdb.com/api.php?amount=5&difficulty=easy')
-      .then(res => res.json())
-      .then(json => {
-        this.setState({
-          isLoaded: true,
-          items: json
-        })
-      });
-
-  }
-
     
   render () {
 
-    var { isLoaded, items } = this.state;
 
-    if (!isLoaded) {
-      return <div>Loading...</div>;
-    }
-
-
-    return (
+  return (
+    
 
   <div className="App">
-    <header>
-      <Zoom >
-          <h1 className="appTitle">ROAD TRIP</h1>
-      </Zoom>
-    </header>
+  
+  <Router>
+  <header>
+    <Header />
 
-    <main>
+  </header>
 
-
+  <main>
     <Switch>
       <Route exact path="/" component={Landing} />
-      <Route exact path="/destinations" component = {Destinations} /> {/* /destinations is where you want {Destinations} to go */}
-      <Route exact path="/travel" component = {Travel} /> 
-      <Route exact path="/camping" component = {Camping} /> 
-      <Route exact path="/snowboarding" component = {Snowboarding} />
-
-          
+      <Route exact path="/Play" component = {Play} /> 
+      <Route exact path="/Browse" component = {Browse} /> 
+      <Route exact path="/Camping" component = {Camping} /> 
+      <Route exact path="/Snowboarding" component = {Snowboarding} />
+      <Route exact path="/Credits" component = {Credits} /> 
     </Switch>
 
+  </main>
+  <footer>
+    <Footer />
 
-    </main>
-
-
+  </footer>
+  </Router>
+  
   </div>
+
+
   );
 }
   }
