@@ -19,12 +19,7 @@ const Games = () => {
 
 
         <ul className="Games-ul-list"> 
-            <li className="Games-li-icons">
-                <h4>some game</h4>
-                <Link to="/Camping">
-                <img className="icon" src={CampingIcon} alt="Camping"/>
-                </Link>
-            </li>
+
 
             <li className="Games-li-icons">
                 <h4>Solve a puzzle</h4>
