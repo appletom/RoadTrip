@@ -26,7 +26,7 @@ class Browse extends Component {
 
             return (
 
-                <div className="card " key={item.id}>
+                <div className="card browse-div" key={item.id}>
                     
                     <div >
                         
@@ -51,7 +51,7 @@ class Browse extends Component {
                             <AddCircleOutlineIcon fontSize="large"/>Add to Cart
                         </Button>
                         </span>
-                        
+
                         </div>
                     </div>
 
