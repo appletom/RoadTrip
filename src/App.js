@@ -9,7 +9,7 @@ import './index.css';
 import Landing from './components/Landing';
 import Play from './components/Play'; 
 import Browse from './components/Browse'; 
-import Camping from './components/Camping';
+import Cart from './components/Cart';
 import Snowboarding from './components/Snowboarding';
 import Form from './components/Form';
 import Credits from './components/Credits';
@@ -39,7 +39,7 @@ class App extends Component {
       <Route exact path="/" component={Landing} />
       <Route exact path="/Play" component = {Play} /> 
       <Route exact path="/Browse" component = {Browse} /> 
-      <Route exact path="/Camping" component = {Camping} /> 
+      <Route exact path="/Cart" component = {Cart} /> 
       <Route exact path="/Snowboarding" component = {Snowboarding} />
       <Route exact path="/Credits" component = {Credits} /> 
     </Switch>

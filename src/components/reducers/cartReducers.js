@@ -55,6 +55,22 @@ const CartReducers = (state = initState, action) => {
         }
     }
 
+    if(action.type===INCREASE_QUANTITY) {
+        let addedItem = state.items.find(item => item.id === action.id)
+
+        if(addedItem.quantity === 1) {
+            let newTotal = state.total + addedItem.price
+            return {
+                ...state,
+                total: newTotal
+            }
+        }
+
+    }
+
+
+
+
     else { 
        return state;
 
